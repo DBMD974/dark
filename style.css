@@ -1,0 +1,643 @@
+body {
+    margin: 0;
+    background-color: black;
+    /* margin: 8%; */
+  }
+  
+  /* la navbar */
+  .navbar {
+    width: 100%;
+    background-color: white;
+    height: 40px;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-list li {
+    margin: 6px 10px;
+  }
+  
+  .nav-list li a {
+    text-decoration: none;
+    color: black;
+  }
+
+
+
+
+  
+/* parti du header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8%;
+    /* border: 2px solid red; */
+    background-color: rgba(0, 0, 0, 0.7); /* Pour Ajoutez un fond semi-transparent */
+    color: white;
+    padding: 20px;
+    position: relative; /* Nécessaire pour placer le contenu par-dessus la vidéo */
+    bottom: 430px;
+  }
+  
+  .video-container {
+    position: relative;
+    top: 200px;
+    left: 117px;
+    right: 0;
+    bottom: 0;
+    max-width: 84%;
+    height: 550px;
+    z-index: -1; /* Placez la vidéo derrière tout le contenu */
+    overflow: hidden; /* Pour S'Assurez que la vidéo ne dépasse pas les limites */
+  }
+  
+  .video-container video {
+    object-fit: cover; /* Ajustez la vidéo pour couvrir tout le conteneur */
+  }
+  
+  .video-link {
+    color: white;
+    text-decoration: none;
+    background-color: #58bbbc;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+  
+  .logo {
+    color: #58bbbc;
+    font-size: 2.5rem;
+    margin-top: -60px;
+    margin-bottom: auto;
+    text-align: center;
+  }
+  
+  .sub-text {
+    color: white;
+    font-size: xx-large;
+  }
+  
+  .header-content {
+    flex: 1;
+    color: #ffffff;
+    margin-left: -100px;
+    color: #58bbbc;
+    /* display: contents; */
+
+  }
+  
+  h1 {
+    font-size: 70px;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .big-button {
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  p .euro{
+    display: flex;
+    margin-left: 40px;
+    color: #58bbbc;
+
+  }
+
+  p{
+    font-size: xx-large;
+    color: #ffffff;
+  }
+  
+  header hr {
+    width: 200%;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    margin: 20px 0;
+  }
+  
+  .image-section {
+    flex: 1;
+    position: relative;
+  }
+  
+  /* .image-section img {
+    max-width: 100%;
+  } */
+  
+  .platform-links {
+    position: absolute;
+    bottom: 300px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+  }
+  
+  .platform-links a {
+    margin: 20px 20px;
+  }
+  
+  .platform-links img {
+    width: 30px;
+    height: 30px;
+  }
+  
+
+
+  /* LE CORPS */
+
+.game-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+    margin: 0 8%;
+  }
+  
+  .left-column {
+    flex: 1;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  img{
+    padding-top: 15px;
+    margin-left: 30px;
+    width: 400px;
+  }
+  
+  .right-column {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .about-title {
+    font-size: 1.5rem;
+    color: #58bbbc;
+    font-size: xx-large;
+    text-align: center;
+  }
+  
+
+  .video-link {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #58bbbc;
+  }
+  
+  .video-embed {
+    position: relative;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #58bbbc;
+  }
+  
+  .video-embed video {
+    width: 100%;
+    max-height: 300px;
+  }
+
+
+
+
+
+  h3 {
+    margin-top: 20px;
+    color: #ffffff;
+    text-align: center;
+    font-size: x-large;
+  }
+
+
+
+  /* parti pour la 3eme section */
+  /* Vos styles existants... */
+
+.concept {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .concept-title {
+    font-size: 1.5rem;
+    color:#58bbbc;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  hr{
+    width: 50%;
+  }
+  
+  .newsletter {
+    margin-top: 20px;
+  }
+  
+  .newsletter-title {
+    font-size: 2rem;
+    color: white;
+  }
+  
+  .email-input {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    border: 1px solid #0e0e0e;
+    padding: 5px;
+    background-color: black;
+    justify-content: center;
+    width: 40%;
+    margin-left: 450px;
+  }
+  
+  .email-input input[type="text"] {
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px;
+  }
+  
+  .email-addon {
+    color: #0e0e0e;
+    padding: 0 5px;
+  }
+  
+  .subscribe-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .arrow-icon {
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid gray;
+    border-right: 2px solid gray;
+    transform: rotate(45deg);
+    margin: auto;
+  }
+
+
+
+
+
+
+
+
+
+.subscribe-section {
+    text-align: center;
+    margin-top: 40%;
+    margin-bottom: 50px;
+  }
+  
+  .subscribe-title {
+    font-size: 1.5rem;
+    color: white;
+  }
+  
+  .email-input-large {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 5px;
+    width: 30%;
+    margin-left: 500px;
+  }
+  
+  .email-input-large input[type="text"] {
+    width: 100%;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 5px;
+  }
+  
+  .email-addon {
+    color: black;
+    padding: 0 5px;
+  }
+  
+  .accept-newsletters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    color: white;
+  }
+  
+  .accept-newsletters label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .accept-newsletters input[type="checkbox"] {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid white;
+    background-color: transparent;
+    margin-right: 5px;
+  }
+  
+  .accept-newsletters input[type="checkbox"]:checked {
+    background-color: white;
+  }
+  
+  
+  
+
+
+/* test de bloc */
+/* Les commentaires débutent par un double slash (//) dans le langage CSS */
+
+/* Ce bloc de styles est appliqué à la div principale qui contient le texte et l'image.
+   Il aligne les éléments en ligne, les centre verticalement et ajoute une marge en bas. */
+   .text-image-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    margin: 8%; /* Ajoute une marge de 8% sur tous les côtés de la div */
+  }
+  
+  /* Ces styles sont appliqués aux colonnes de texte et d'image à l'intérieur de la div principale.
+     Chaque colonne occupe 50% de la largeur et a un espacement intérieur de 20px.
+     La couleur du texte est définie en blanc (#ffffff). */
+  .text-column,
+  .image-column {
+    flex: 1; /* Les colonnes occupent également la moitié de la largeur de la div */
+    padding: 20px;
+    color: #ffffff; /* Couleur du texte en blanc */
+    
+  }
+
+  .text-column h2{
+    color: #58bbbc;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
+  }
+  
+  /* Les styles pour la colonne de texte.
+     La propriété "order" détermine l'ordre d'affichage, ici le texte est affiché en premier. */
+  .text-column {
+    order: 1;
+    text-align: center; /* Alignement du texte à gauche */
+  }
+  
+  /* Les styles pour la colonne d'image.
+     La propriété "order" détermine l'ordre d'affichage, ici l'image est affichée en deuxième. */
+  .image-column {
+    order: 2;
+    text-align: center; /* Alignement du texte à droite */
+  }
+  
+  /* Styles pour les images à l'intérieur de la colonne d'image.
+     L'image occupe 100% de la largeur et une hauteur fixe de 620 pixels.
+     La bordure est commentée pour l'instant (désactivée). */
+  .image-column img {
+    width: 100%;
+    height: 620px;
+    /* border: 2px solid #58bbbc; */ /* Bordure autour de l'image */
+  }
+  
+  /* Les styles inversés sont appliqués lorsque la classe "reversed" est ajoutée à la div principale.
+     Ces styles inversent l'ordre d'affichage du texte et de l'image. */
+  .reversed .text-column {
+    order: 2;
+    text-align: center;
+  }
+  
+  .reversed .image-column {
+    order: 1;
+    text-align: left;
+  }
+  
+
+
+
+
+
+/* test video */
+/* .video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    z-index: -1;
+  } */
+
+  /* Vos styles existants... */
+
+
+
+
+
+
+
+  /* parti de code pour le formulaire de DONS */
+  /* Vos styles existants... */
+
+.donation-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #58bbbc;
+  max-width: 420px;
+  margin: 0 auto;
+  margin: 10% auto;
+}
+
+.donation-form h3 {
+  color: #58bbbc;
+}
+
+.donation-form label {
+  display: block;
+  margin-top: 10px;
+  color: #333;
+}
+
+.donation-form input[type="text"],
+.donation-form input[type="email"] {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+}
+
+.donation-form button {
+  background-color: #58bbbc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+/* INSCRIPTION */
+
+.subscription-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #58bbbc;
+  margin: 10% auto;
+  background-color: #333;
+}
+
+.subscription-form h3 {
+  color: #58bbbc;
+}
+
+.subscription-form label {
+  display: block;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.subscription-form input[type="email"] {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+}
+
+.subscription-form button {
+  background-color: #58bbbc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Vos autres styles... */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* bouton reour haut de pages */
+
+.scroll-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #58bbbc;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.scroll-top-button:hover {
+  background-color: #447d7f;
+}
+
+/* Vos autres styles... */
+
+
+
+
+
+
+  /* Vos styles existants... */
+
+.footer {
+    background-color: #0e0e0e;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 150px;
+    text-align: center;
+    font-size: large;
+    border: 2px solid #58bbbc;
+  }
+  
+  .footer-links-center ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-links-center li {
+    margin: 10px 0;
+  }
+  
+  .footer-links-center a {
+    color: white;
+    text-decoration: none;
+    margin-left: 690px;
+}
+
+.footer-links-center a:hover{
+  font-size: larger;
+  color: #58bbbc;
+}
+  
+  .footer-links-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-links-right a {
+    margin: 0 10px;
+  }
+  
+  .footer-links-right img {
+    width: 30px;
+    height: 30px;
+  }
+
+/* texte en dessous du footer */
+  .copy{
+    font-size: smaller;
+    margin-left: 20px;
+  }
+
+  .copy a{
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
