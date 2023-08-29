@@ -31,14 +31,14 @@
     <img src="images\monster.png" alt="">
   </div>
   <div class="right-column">
-  <h2 class="about-title">À propos</h2>
+  <h2 class="about-title">Vidéo de gameplay</h2>
   <!-- <a class="video-link" href="images\uk_yeux_M.mp4">Lien Vidéo</a> -->
   <div class="video-embed">
     <video controls>
       <source src="images\uk_yeux_M.mp4" type="video/mp4">
     </video>
   </div>
-  <h3>Vidéo de gameplay</h3>
+  <!-- <h3></h3> -->
 </div>
 
 </div>
@@ -49,10 +49,9 @@
 <!-- le centre su body -->
 
 <div class="concept">
-  <h2 class="concept-title">Concept</h2>
-  <hr class="trait">
-  <div class="newsletter">
-    <h3 class="newsletter-title">J'accepte de recevoir des newsletters</h3>
+<div class="newsletter">
+    <h3 class="newsletter-title">S'abonner a la newsletters</h3>
+
     <form method="post" action="transfert.php">
         <div class="email-input">
             <input type="email" id="email" name="email" placeholder="@">
@@ -61,8 +60,15 @@
                 <div class="arrow-icon"></div>
             </button>
         </div>
+        <div class="accept-newsletters">
+            <input type="checkbox" id="accept-checkbox" name="accept">
+            <label for="accept-checkbox">J'accepte de recevoir des newsletters</label>
+        </div>
     </form>
 </div>
+  <hr class="trait">
+  <h2 class="concept-title">Concept</h2>
+  
 </div>
 
 
@@ -100,9 +106,15 @@
 
 
 
-<!-- <div class="video-container">
-    <video src="images\uk_yeux_M.mp4" autoplay loop muted></video>
-  </div> -->
+
+
+
+<!-- new section -->
+
+
+
+
+
 
 
 

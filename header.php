@@ -13,9 +13,9 @@
 
     <nav class="navbar">
         <ul class="nav-list">
-            <li><a href="https://tiktakprod.com/">Maison</a></li>
-            <li><a href="#">A propos</a></li>
-            <li><a href="#">Statistiques</a></li>
+            <li><a href="https://tiktakprod.com/">LYBERTY GAMES</a></li>
+            <!-- <li><a href="#">A propos</a></li> -->
+            <!-- <li><a href="#">Statistiques</a></li> -->
             <button><li><a href="inscription.php">S'abonner</a></li></button>
             <!-- S'abonner -->
         </ul>
@@ -41,7 +41,7 @@
         <div class="header-content">
             <h1>Campagne de Crowdfunding</h1>
             <a class="big-button" href="#">Participer <i class="fa-solid fa-arrow-right fa-2xl" style="color: #000000;"></i></a>
-            <p class="euro">Déjà 2000 € récoltés !</p>
+            <p class="euro">Déjà 10000 € récoltés !</p>
             <hr>
             <p>Adaptation de la BD de Moebius et Jodorowsky en jeu vidéo</p>
             <p>créé par Manuel Ruiz Dupont</p>
