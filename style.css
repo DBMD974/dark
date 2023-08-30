@@ -371,6 +371,13 @@ body {
   
 
 
+
+
+
+
+
+
+
 /* test de bloc */
 /* Les commentaires débutent par un double slash (//) dans le langage CSS */
 
@@ -443,6 +450,13 @@ body {
 
 
 
+
+
+
+
+
+
+
 /* test video */
 /* .video-container {
     position: fixed;
@@ -455,7 +469,12 @@ body {
     z-index: -1;
   } */
 
-  /* Vos styles existants... */
+
+
+
+
+
+
 
 
 
@@ -521,11 +540,54 @@ body {
 
 
 
+/* section partenaire */
+
+.partners-section {
+  text-align: center;
+  padding: 40px;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #58bbbc;
+  text-decoration: underline;
+}
+
+.partners-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.partner-block {
+  width: 150px;
+  margin: 10px;
+}
+
+.partner-block img {
+  width: 100%;
+  height: auto;
+}
+
+hr .partner {
+  margin: 20px 0;
+  border: none;
+  border-top: 2px solid #ccc;
+}
 
 
 
 
-/* bouton reour haut de pages */
+
+
+
+
+
+
+
+/* bouton retour haut de pages */
 
 .scroll-top-button {
   position: fixed;
@@ -543,14 +605,17 @@ body {
   background-color: #447d7f;
 }
 
-/* Vos autres styles... */
 
 
 
 
 
 
-  /* Vos styles existants... */
+
+
+
+
+  /* PARTIE FOOTER */
 
 .footer {
     background-color: #0e0e0e;
