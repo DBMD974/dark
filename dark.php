@@ -49,27 +49,27 @@
 <!-- le centre su body -->
 
 <div class="concept">
-<div class="newsletter">
-    <h3 class="newsletter-title">S'abonner a la newsletters</h3>
+    <div class="newsletter">
+        <h3 class="newsletter-title">S'abonner à la Newsletter</h3>
+        <form id="newsletter-form" method="post" action="transfert.php">
+            <div class="email-input">
+                <input type="email" id="email" name="email" placeholder="@">
+                <div class="email-addon">@</div>
+                <button class="subscribe-button" type="submit">
+                    <div class="arrow-icon"></div>
+                </button>
+            </div>
+            <div class="accept-newsletters">
+                <input type="checkbox" id="accept-checkbox" name="accept">
+                <label for="accept-checkbox">J'accepte de recevoir des newsletters</label>
+                <span class="error-message" id="accept-error">Vous devez accepter de recevoir des newsletters pour vous abonner.</span>
+            </div>
+        </form>
+    </div>
+    <hr class="trait">
+    <h2 class="concept-title">Concept</h2>
+</div>
 
-    <form method="post" action="transfert.php">
-        <div class="email-input">
-            <input type="email" id="email" name="email" placeholder="@">
-            <div class="email-addon">@</div>
-            <button class="subscribe-button" type="submit">
-                <div class="arrow-icon"></div>
-            </button>
-        </div>
-        <div class="accept-newsletters">
-            <input type="checkbox" id="accept-checkbox" name="accept">
-            <label for="accept-checkbox">J'accepte de recevoir des newsletters</label>
-        </div>
-    </form>
-</div>
-  <hr class="trait">
-  <h2 class="concept-title">Concept</h2>
-  
-</div>
 
 
 
@@ -122,7 +122,7 @@
 
 <div class="subscribe-section">
     <h3 class="subscribe-title">S'abonner à la Newsletter</h3>
-    <form method="post" action="transfert.php">
+    <form id="subscribe-form" method="post" action="transfert.php">
         <div class="email-input-large">
             <input type="email" id="email-subscribe" name="email" placeholder="votre.email@example.com">
             <div class="email-addon">@</div>
@@ -130,10 +130,13 @@
         <div class="accept-newsletters">
             <input type="checkbox" id="accept-checkbox" name="accept">
             <label for="accept-checkbox">J'accepte de recevoir des newsletters</label>
+            <span class="error-message" id="accept-error">Vous devez accepter de recevoir des newsletters pour vous abonner.</span>
         </div>
         <button type="submit">S'abonner</button>
     </form>
 </div>
+
+
 
 
 

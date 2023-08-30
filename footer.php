@@ -19,11 +19,11 @@
       </ul>
     </div>
     <div class="footer-links-right">
-      <a href="#"><i class="fa-brands fa-facebook fa-beat fa-2xl" style="color: #ffffff;"></i></a>
-      <a href="#"><i class="fa-brands fa-instagram fa-beat fa-2xl" style="color: #ffffff;"></i></a>
-      <a href="#"><i class="fa-solid fa-globe fa-beat fa-2xl" style="color: #ffffff;"></i></a>
-      <a href="#"><i class="fa-brands fa-linkedin fa-beat fa-2xl" style="color: #ffffff;"></i></a>
-      <a href="#"><i class="fa-brands fa-twitter fa-beat fa-2xl" style="color: #ffffff;"></i></a>
+      <a href="https://www.facebook.com/libertygames.reunion"><i class="fa-brands fa-facebook fa-beat fa-2xl" style="color: #ffffff;"></i></a>
+      <a href="https://instagram.com/libertygamesreunion?igshid=MWZjMTM2ODFkZg=="><i class="fa-brands fa-instagram fa-beat fa-2xl" style="color: #ffffff;"></i></a>
+      <a href="https://libertygames.re/"><i class="fa-solid fa-globe fa-beat fa-2xl" style="color: #ffffff;"></i></a>
+      <a href="https://www.linkedin.com/company/liberty-games-run/"><i class="fa-brands fa-linkedin fa-beat fa-2xl" style="color: #ffffff;"></i></a>
+      <a href="https://twitter.com/libertygames974?t=IEWeCUVkfStcOF7DbDrTTQ&s=09"><i class="fa-brands fa-twitter fa-beat fa-2xl" style="color: #ffffff;"></i></a>
     </div>
   </footer>
 

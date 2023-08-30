@@ -3,18 +3,22 @@ require_once 'connexion.php'; // Assurez-vous que le chemin vers votre fichier M
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
+    $accept = isset($_POST["accept"]) ? $_POST["accept"] : false;
 
-    $uneconnexion = new MaConnexion("dark_stage", "", "root", "localhost");
-    $result = $uneconnexion->insertion_abonner_secure($email);
+    if (!$accept) {
+        echo "Vous devez accepter de recevoir des newsletters pour vous abonner.";
+    } else {
+        $uneconnexion = new MaConnexion("dark_stage", "", "root", "localhost");
+        $result = $uneconnexion->insertion_abonner_secure($email);
 
-    $response = json_decode($result, true);
+        $response = json_decode($result, true);
 
-    if (isset($response["message"])) {
-        // Rediriger l'utilisateur vers une page de succès
-        header("Location: dark.php");
-        exit(); // Assurez-vous de terminer le script ici pour éviter toute exécution supplémentaire
-    } else if (isset($response["error"])) {
-        echo "Une erreur est survenue : " . $response["error"];
+        if (isset($response["message"])) {
+            // Afficher un message de succès sur la même page
+            echo "Inscription réussie !";
+        } else if (isset($response["error"])) {
+            echo "Une erreur est survenue : " . $response["error"];
+        }
     }
 }
 ?>

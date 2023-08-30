@@ -13,7 +13,7 @@
 
     <nav class="navbar">
         <ul class="nav-list">
-            <li><a href="https://tiktakprod.com/">LYBERTY GAMES</a></li>
+            <li><a href="https://libertygames.re/">LYBERTY GAMES</a></li>
             <!-- <li><a href="#">A propos</a></li> -->
             <!-- <li><a href="#">Statistiques</a></li> -->
             <button><li><a href="inscription.php">S'abonner</a></li></button>
