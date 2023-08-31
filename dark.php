@@ -113,11 +113,11 @@
 <section class="partners-section">
         <h2 class="section-title">NOS PARTENAIRES</h2>
         <div class="partners-row">
-            <div class="partner-block"><img src="./images/" alt="Partner 1"></div>
-            <div class="partner-block"><img src="dark\images\partenaire\1.png" alt="Partner 2"></div>
-            <div class="partner-block"><img src="dark\images\partenaire\canal.png" alt="Partner 3"></div>
-            <div class="partner-block"><img src="dark\images\partenaire\tvmonde.png" alt="Partner 4"></div>
-            <div class="partner-block"><img src="dark\images\partenaire\gulli.png" alt="Partner 4"></div>
+            <div class="partner-block"><img src="../dark/images/partenaire/1.png" alt="Partner 1"></div>
+            <div class="partner-block"><img src="../dark/images/partenaire/canal.png" alt="Partner 2"></div>
+            <div class="partner-block"><img src="../dark/images/partenaire/france.png" alt="Partner 3"></div>
+            <div class="partner-block"><img src="../dark/images/partenaire/gulli.png" alt="Partner 4"></div>
+            <div class="partner-block"><img src="../dark/images/partenaire/tvmonde.png" alt="Partner 4"></div>
         </div>
         <hr class="partner">
         <h2 class="section-title">NOS FINANCEURS</h2>

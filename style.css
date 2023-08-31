@@ -65,7 +65,7 @@ body {
   
   .video-container {
     position: relative;
-    top: 250px;
+    top: 450px;
     left: 117px;
     right: 0;
     bottom: 0;
@@ -91,7 +91,7 @@ body {
   .logo {
     color: #58bbbc;
     font-size: 2.5rem;
-    margin-top: -60px;
+    margin-top: -150px;
     margin-bottom: 900px;
     text-align: center;
   }
@@ -187,6 +187,13 @@ body {
     flex: 1;
     color: #ffffff;
     text-align: center;
+  }
+
+  h2{
+    font-size: xx-large;
+    color:#58bbbc;
+    text-decoration: underline;
+    
   }
 
   img{
