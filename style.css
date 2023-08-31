@@ -15,7 +15,7 @@ body {
   .nav-list {
     list-style: none;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 0;
     margin: 0;
   }
@@ -31,6 +31,19 @@ body {
     font-size: x-large;
 
   }
+
+  /* Applique un fond noir et une couleur de texte bleu ciel au bouton */
+.nav-list button {
+  background-color: black;
+  border: none;
+  padding: 8px 16px;
+  color:#58bbbc;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+
 
 
 
@@ -52,12 +65,12 @@ body {
   
   .video-container {
     position: relative;
-    top: 200px;
+    top: 250px;
     left: 117px;
     right: 0;
     bottom: 0;
     max-width: 84%;
-    height: 550px;
+    height: 600px;
     z-index: -1; /* Placez la vidéo derrière tout le contenu */
     overflow: hidden; /* Pour S'Assurez que la vidéo ne dépasse pas les limites */
   }
@@ -79,7 +92,7 @@ body {
     color: #58bbbc;
     font-size: 2.5rem;
     margin-top: -60px;
-    margin-bottom: auto;
+    margin-bottom: 900px;
     text-align: center;
   }
   
@@ -483,51 +496,6 @@ body {
 
 
 
-/* INSCRIPTION */
-
-.subscription-form {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #58bbbc;
-  margin: 10% auto;
-  background-color: #333;
-}
-
-.subscription-form h3 {
-  color: #58bbbc;
-}
-
-.subscription-form label {
-  display: block;
-  margin-top: 10px;
-  color: #ffffff;
-}
-
-.subscription-form input[type="email"] {
-  width: 100%;
-  padding: 5px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-}
-
-.subscription-form button {
-  background-color: #58bbbc;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  margin-top: 10px;
-  cursor: pointer;
-}
-
-/* Vos autres styles... */
-.error-message {
-  display: none;
-  color: red;
-  font-size: 12px;
-  margin-left: 10px;
-}
-
 
 
 
@@ -599,11 +567,22 @@ hr .partner {
   padding: 10px 15px;
   cursor: pointer;
   z-index: 1;
+  font-size: 14px; /* Ajoutez la taille de police souhaitée */
+}
+
+.scroll-top-button a {
+  text-decoration: none; /* Supprime la décoration par défaut des liens */
+  color: white; /* Applique la couleur de texte au lien */
 }
 
 .scroll-top-button:hover {
   background-color: #447d7f;
 }
+
+.scroll-top-button:hover a {
+  color: white; /* Applique la couleur de texte au lien au survol */
+}
+
 
 
 

@@ -11,15 +11,12 @@
 
 <body class="head">
 
-    <nav class="navbar">
-        <ul class="nav-list">
-            <li><a href="https://libertygames.re/">LYBERTY GAMES</a></li>
-            <!-- <li><a href="#">A propos</a></li> -->
-            <!-- <li><a href="#">Statistiques</a></li> -->
-            <button><li><a href="inscription.php">S'abonner</a></li></button>
-            <!-- S'abonner -->
-        </ul>
-    </nav>
+<nav class="navbar" id="header">
+    <ul class="nav-list">
+        <li><a href="https://libertygames.re/">LYBERTY GAMES</a></li>
+        <button><li><a href="#subscribe-form">S'abonner</a></li></button>
+    </ul>
+</nav>
 
 
 

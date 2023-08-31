@@ -139,7 +139,7 @@
 
 <!-- Après la div 'Concept' -->
 
-<div class="subscribe-section">
+<section class="subscribe-section" id="subscribe-form">
     <h3 class="subscribe-title">S'abonner à la Newsletter</h3>
     <form id="subscribe-form" method="post" action="transfert.php">
         <div class="email-input-large">
@@ -168,7 +168,7 @@
 
 
 <!-- Bouton pour retourner en haut de la page -->
-<button id="scrollTopButton" class="scroll-top-button">Haut de page</button>
+<button id="scrollTopButton" class="scroll-top-button"><a href="#header">Haut de page</a></button>
 
 
 

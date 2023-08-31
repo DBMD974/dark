@@ -14,8 +14,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $response = json_decode($result, true);
 
         if (isset($response["message"])) {
-            // Afficher un message de succès sur la même page
-            echo "Inscription réussie !";
+            // Rediriger vers l'en-tête (header) après inscription réussie et acceptation
+            header("Location: dark.php"); // Remplacez "index.php" par le chemin de votre page
+            exit; // Important pour arrêter le script après la redirection
         } else if (isset($response["error"])) {
             echo "Une erreur est survenue : " . $response["error"];
         }
