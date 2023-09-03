@@ -13,7 +13,7 @@
   <footer class="footer">
     <div class="footer-links-center">
       <ul>
-        <li><a href="#">Contact</a></li>
+        <li><a href="mailto:laurent.medea@libertygames.re">Contact</a></li>
         <li><a href="#">RGPD</a></li>
         <li><a href="#">Liberty Games</a></li>
       </ul>
