@@ -2,7 +2,7 @@
 
 /* style texte utiliser
 
-font-family: 'Black Ops One', cursive;
+font-family : 'Rubik Iso', cursive ; 
 
 font-family: 'Lobster', cursive;
 
@@ -29,8 +29,8 @@ font-family: 'Lobster Two', cursive;
 
 /* Réduire la taille du logo de la navbar */
 .navbar-logo img {
-  width: 150px; /* Ajustez la largeur souhaitée */
-  height: 80px; /* Garantit le maintien du ratio largeur/hauteur */
+  width: 160px; /* Ajustez la largeur souhaitée */
+  height: 60px; /* Garantit le maintien du ratio largeur/hauteur */
 }
 
 
@@ -67,7 +67,7 @@ font-family: 'Lobster Two', cursive;
   position: relative;
   text-align: center;
   color: #58bbbc;
-  font-family: 'Black Ops One', cursive;
+  font-family : 'Rubik Iso';
 }
 
 /* parti du header */
@@ -95,7 +95,7 @@ font-family: 'Lobster Two', cursive;
 .video-container video {
   object-fit: cover;
   width: 100%;
-  height: 1000px; /* Assurez-vous que la vidéo couvre tout le conteneur */
+  height: 900px; /* Assurez-vous que la vidéo couvre tout le conteneur */
 }
 
 
@@ -126,6 +126,7 @@ font-family: 'Lobster Two', cursive;
     font-size: 70px;
     margin-bottom: 10px;
     color: #ffffff;
+    font-family: 'Lobster', cursive;
   }
   
   .big-button {
@@ -141,7 +142,7 @@ font-family: 'Lobster Two', cursive;
     color: #58bbbc; /* Change la couleur en bleu */
     float: right; /* Place le texte à droite */
     margin-right: 0px; /* Ajoute une marge à droite pour l'espacement */
-    font-family: 'Black Ops One', cursive;
+    font-family : 'Rubik Iso', cursive;
     font-size: xx-large;
     margin-bottom: 10px;
 }
@@ -194,7 +195,113 @@ font-family: 'Lobster Two', cursive;
 }
 
   /* fin du header */
+
+
+
+
+  /* responsivité du header styles pour les écrans de 768px de largeur*/
+@media screen and (max-width: 768px) {
+  /* Réduisez la taille du logo de la navbar */
+  .navbar-logo img {
+    width: 768px; /* Ajustez la largeur souhaitée pour les petits écrans */
+    height: auto; /* Assurez-vous que le ratio largeur/hauteur est respecté */
+  }
+
+  /*la taille du texte de la navbar */
+  .nav-list li a {
+    font-size: large; /* Ajustez la taille de la police pour les petits écrans */
+  }
+
+  .navbar-logo img {
+    width: 60px; /* Ajustez la largeur souhaitée */
+    height: 60px; /* Garantit le maintien du ratio largeur/hauteur */
+  }
+
+  /*la taille du titre */
+  h1 {
+    font-size: 30px; /* Ajustez la taille du titre pour les petits écrans */
+    position: relative;
+    text-align: center;
+    color: #58bbbc;
+    font-family : 'Rubik Iso';
+  }
+
+  .head{
+    padding-top: 15px;
+    margin-left: 30px;
+    width: 250px;
+  }
+
+
+  /*la taille du bouton */
+  .big-button {
+    padding: 10px 20px; /* Ajustez la taille du bouton pour les petits écrans */
+  }
+
+  /* Réduisez la hauteur de la vidéo */
+  .video-container video {
+    height: 500px; /* Ajustez la hauteur de la vidéo pour les petits écrans */
+  }
+
+  p{
+    font-size: x-large;
+    color: #ffffff;
+  }
+
+  /*la taille du texte */
+  .euro {
+    font-size: large; /* Ajustez la taille du texte pour les petits écrans */
+  }
+
+  .platform-links {
+    position: absolute;
+    /* bottom: 300px; */
+    right: 0;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-evenly; */
+    /* align-content: flex-start; */
+}
+
+  /* Réduisez la taille des icônes de plateforme */
+  .platform-links img {
+    width: 20px; /* Ajustez la taille des icônes pour les petits écrans */
+    height: 20px;
+  }
+
+  /* Réduisez la taille du texte de la section du contenu */
+  .header-content, .image-section {
+    font-size: medium; /* Ajustez la taille du texte pour les petits écrans */
+  }
+
+
+}
+
+/* responsivité pour portable */
+@media screen and (max-width: 400px) {
+
+
+
+}
+
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   /* LE CORPS */
@@ -269,6 +376,28 @@ font-family: 'Lobster Two', cursive;
     font-size: x-large;
     font-family: 'Lobster', cursive;
   }
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -349,6 +478,21 @@ font-family: 'Lobster Two', cursive;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .subscribe-section {
     text-align: center;
     margin-top: 40%;
@@ -414,6 +558,25 @@ font-family: 'Lobster Two', cursive;
   
   
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -531,6 +694,15 @@ font-family: 'Lobster Two', cursive;
 
 
 
+
+
+
+
+
+
+
+
+
 /* test video */
 /* .video-container {
     position: fixed;
@@ -542,6 +714,16 @@ font-family: 'Lobster Two', cursive;
     height: 10%;
     z-index: -1;
   } */
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -590,6 +772,24 @@ hr .partner {
   border: none;
   border-top: 2px solid #ccc;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

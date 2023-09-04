@@ -26,7 +26,7 @@
 <body class="head">
     <nav class="navbar" id="header">
         <ul class="nav-list">
-            <li><a href="https://libertygames.re/" class="navbar-logo"><img src="./images/LIBERTYGAMES.png" alt="LYBERTY GAMES"></a></li>
+            <li><a href="https://libertygames.re/" class="navbar-logo"><img src="./images/logo_liberty.png" alt="LYBERTY GAMES"></a></li>
             <li><a href="#subscribe-form">S'abonner</a></li>
         </ul>
     </nav>
@@ -50,7 +50,7 @@
         </div>
 
         <div class="image-section">
-            <img src="images\chateaux.png" alt="Image">
+            <img class="head" src="images\chateaux.png" alt="Image">
             <div class="platform-links">
                 <a href="#"><i class="fa-brands fa-xbox fa-2xl" style="color: #ffffff;"></i></a>
                 <a href="#"><i class="fa-brands fa-playstation fa-2xl" style="color: #ffffff;"></i></a>
