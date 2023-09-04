@@ -329,10 +329,11 @@ font-family: 'Lobster Two', cursive;
     
   }
 
-  img{
+  .tete{
     padding-top: 15px;
     margin-left: 30px;
     width: 400px;
+    box-shadow: 5px 5px 10px 1px #8ae5f3;
   }
   
   .right-column {
@@ -599,8 +600,12 @@ font-family: 'Lobster Two', cursive;
     flex: 1; /* Les colonnes occupent également la moitié de la largeur de la div */
     padding: 20px;
     color: #ffffff; /* Couleur du texte en blanc */
-    
   }
+
+  .image-column {
+  box-shadow: 5px 5px 10px 1px #8ae5f3;
+}
+
 
   .text-column h2{
     color: #58bbbc;

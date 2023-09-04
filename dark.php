@@ -28,7 +28,7 @@
       <p><strong>Durée de jeu:</strong> 3h</p>
       <p><strong>Localisation:</strong> 5 langues (FR, ES, DE, UK, IT)</p>
       <p><strong>Outils:</strong> Unreal Engine 5 (moteur de <br> développement)</p>
-      <img src="images\monster.png" alt="">
+      <img class="tete" src="images\monster.png" alt="">
     </div>
     <div class="right-column">
       <h2 class="about-title">Vidéo de gameplay</h2>
