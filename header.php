@@ -50,7 +50,7 @@
         </div>
 
         <div class="image-section">
-            <img class="head" src="images\chateaux.png" alt="Image">
+            <img class="chateau" src="images\chateaux.png" alt="Image">
             <div class="platform-links">
                 <a href="#"><i class="fa-brands fa-xbox fa-2xl" style="color: #ffffff;"></i></a>
                 <a href="#"><i class="fa-brands fa-playstation fa-2xl" style="color: #ffffff;"></i></a>

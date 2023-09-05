@@ -120,11 +120,11 @@
     <hr class="partner">
     <h2 class="section-title">NOS FINANCEURS</h2>
     <div class="partners-row">
-      <div class="partner-block"><img src="image5.jpg" alt="Partner 5"></div>
-      <div class="partner-block"><img src="image6.jpg" alt="Partner 6"></div>
-      <div class="partner-block"><img src="image7.jpg" alt="Partner 7"></div>
-      <div class="partner-block"><img src="image8.jpg" alt="Partner 8"></div>
-      <div class="partner-block"><img src="image9.jpg" alt="Partner 4"></div>
+    <div class="partner-block"><img src="../dark/images/partenaire/1.png" alt="Partner 5"></div>
+      <div class="partner-block"><img src="../dark/images/partenaire/canal.png" alt="Partner 6"></div>
+      <div class="partner-block"><img src="../dark/images/partenaire/france.png" alt="Partner 7"></div>
+      <div class="partner-block"><img src="../dark/images/partenaire/gulli.png" alt="Partner 8"></div>
+      <div class="partner-block"><img src="../dark/images/partenaire/tvmonde.png" alt="Partner 9"></div>
     </div>
   </section>
 
@@ -149,7 +149,7 @@
         <label for="accept-checkbox">J'accepte de recevoir des newsletters</label>
         <span class="error-message" id="accept-error">Vous devez accepter de recevoir des newsletters pour vous abonner.</span>
       </div>
-      <button type="submit">S'abonner</button>
+      <button class="abo" type="submit">S'abonner</button>
     </form>
     </div>
 

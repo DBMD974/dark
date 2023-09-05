@@ -164,6 +164,12 @@ font-family: 'Lobster Two', cursive;
     flex: 1;
     position: relative;
   }
+
+  .chateau{
+    width: 450px;
+    height: auto;
+    margin-left: 40px;
+  }
   
   
   .platform-links {
@@ -213,8 +219,8 @@ font-family: 'Lobster Two', cursive;
   }
 
   .navbar-logo img {
-    width: 60px; /* Ajustez la largeur souhaitée */
-    height: 60px; /* Garantit le maintien du ratio largeur/hauteur */
+    width: 80px; /* Ajustez la largeur souhaitée */
+    height: 50px; /* Garantit le maintien du ratio largeur/hauteur */
   }
 
   /*la taille du titre */
@@ -226,10 +232,19 @@ font-family: 'Lobster Two', cursive;
     font-family : 'Rubik Iso';
   }
 
-  .head{
+  .chateau{
     padding-top: 15px;
     margin-left: 30px;
     width: 250px;
+    margin-bottom: 35px;
+  }
+
+  .platform-links {
+    position: absolute;
+    bottom: -20px;
+    /* right: 0; */
+    display: flex;
+    flex-direction: initial;
   }
 
 
@@ -244,7 +259,7 @@ font-family: 'Lobster Two', cursive;
   }
 
   p{
-    font-size: x-large;
+    font-size: large;
     color: #ffffff;
   }
 
@@ -377,8 +392,83 @@ font-family: 'Lobster Two', cursive;
     font-size: x-large;
     font-family: 'Lobster', cursive;
   }
+/* responsivité */
+  @media screen and (max-width: 768px) {
+
+    .game-details {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 40px;
+      margin: 0 8%;
+      padding: 10px;
+    }
+    
+    .left-column {
+      flex: 1;
+      color: #ffffff;
+      text-align: center;
+    }
+  
+    h2{
+      font-size: 30px;
+      color:#58bbbc;
+      text-decoration: underline;
+      font-family: 'Lobster Two', cursive;
+      
+    }
+  
+    .tete{
+      padding-top: 0;
+      margin-left: 10px;
+      width: 200px;
+      box-shadow: 5px 5px 10px 1px #8ae5f3;
+    }
+    
+    .right-column {
+      flex: 1;
+      text-align: right;
+    }
+    
+    .about-title {
+      color: #58bbbc;
+      font-size: x-large;
+      text-align: center;
+    }
+    
+  
+    .video-link {
+      display: block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #58bbbc;
+    }
+    
+    .video-embed {
+      position: relative;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #000000;
+      /* border: 1px solid #58bbbc; */
+    }
+    
+    .video-embed video {
+      width: 100%;
+      max-height: 250px;
+    }
+  
+  
+    h2 {
+      margin-top: 20px;
+      color:#58bbbc;
+      text-align: center;
+      font-size: x-large;
+      font-family: 'Lobster', cursive;
+    }
 
 
+
+  }
   
 
 
@@ -403,9 +493,7 @@ font-family: 'Lobster Two', cursive;
 
 
 
-  /* parti pour la 3eme section */
-
-
+  /* parti TITRE CONCEPT et premier formulaire */
 .concept {
     text-align: center;
     margin-top: 40px;
@@ -471,6 +559,78 @@ font-family: 'Lobster Two', cursive;
     margin: auto;
   }
 
+  @media screen and (max-width: 768px) {
+
+    .concept {
+      text-align: center;
+      margin-top: 40px;
+    }
+    
+    .concept-title {
+      /* font-size: 1.5rem; */
+      color:#58bbbc;
+      font-size: 40px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+  
+    hr{
+      width: 50%;
+    }
+    
+    .newsletter {
+      margin-top: 20px;
+    }
+    
+    .newsletter-title {
+      font-size: 1.5rem;
+      color: white;
+    }
+    
+    .email-input {
+      display: flex;
+      align-items: center;
+      margin-top: 0;
+      border: 1px solid #0e0e0e;
+      padding: 5px;
+      background-color: black;
+      justify-content: center;
+      width: 30%;
+      margin-left: 260px;
+    }
+    
+    .email-input input[type="text"] {
+      width: 100%;
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 5px;
+    }
+    
+    .email-addon {
+      color: #0e0e0e;
+      padding: 0 5px;
+    }
+    
+    .subscribe-button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .arrow-icon {
+      width: 10px;
+      height: 10px;
+      border-top: 2px solid gray;
+      border-right: 2px solid gray;
+      transform: rotate(45deg);
+      margin: auto;
+    }
+
+  }
+
+  @media screen and (max-width: 400px) {
+      
+  }
 
 
 
@@ -494,6 +654,7 @@ font-family: 'Lobster Two', cursive;
 
 
 
+/* second formulaire avant le footer */
 .subscribe-section {
     text-align: center;
     margin-top: 40%;
@@ -556,7 +717,93 @@ font-family: 'Lobster Two', cursive;
   .accept-newsletters input[type="checkbox"]:checked {
     background-color: white;
   }
-  
+
+  .abo{
+    background-color: #58bbbc;
+    color: #ffffff;
+    margin-top: 5px;
+  }
+
+  /* second formulaire avant le footer la responsivité*/
+  @media screen and (max-width: 768px) {
+
+    .subscribe-section {
+      text-align: center;
+      margin-top: 40%;
+      margin-bottom: 50px;
+    }
+    
+    .subscribe-title {
+      font-size: 1.5rem;
+      color:#44bfda;
+      text-decoration: underline;
+      font-family : 'Rubik Iso', cursive ;
+    }
+    
+    .email-input-large {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+      border-radius: 20px;
+      background-color: white;
+      padding: 5px;
+      width: 30%;
+      margin-left: 260px;
+    }
+    
+    .email-input-large input[type="text"] {
+      width: 100%;
+      background-color: white;
+      color: black;
+      border: none;
+      padding: 5px;
+    }
+    
+    .email-addon {
+      color: black;
+      padding: 0 5px;
+    }
+    
+    .accept-newsletters {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+      color: white;
+    }
+    
+    .accept-newsletters label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    
+    .accept-newsletters input[type="checkbox"] {
+      appearance: none;
+      width: 15px;
+      height: 15px;
+      border: 1px solid white;
+      background-color: transparent;
+      margin-right: 5px;
+    }
+    
+    .accept-newsletters input[type="checkbox"]:checked {
+      background-color: white;
+    }
+
+    .abo{
+      background-color: #58bbbc;
+      color: #ffffff;
+      margin-top: 5px;
+    }
+
+  }
+
+    /* second formulaire avant le footer la responsivité*/
+    @media screen and (max-width: 400px) {
+
+    }
   
   
 
@@ -609,7 +856,7 @@ font-family: 'Lobster Two', cursive;
 
   .text-column h2{
     color: #58bbbc;
-    font-size: xx-large;
+    font-size: large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: underline;
   }
@@ -689,6 +936,114 @@ font-family: 'Lobster Two', cursive;
 }
 
 
+@media screen and (max-width: 768px) {
+
+/* Ce bloc de styles est appliqué à la div principale qui contient le texte et l'image.
+   Il aligne les éléments en ligne, les centre verticalement et ajoute une marge en bas. */
+   .text-image-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    margin: 8%; /* Ajoute une marge de 8% sur tous les côtés de la div */
+  }
+  
+  /* Ces styles sont appliqués aux colonnes de texte et d'image à l'intérieur de la div principale.
+     Chaque colonne occupe 50% de la largeur et a un espacement intérieur de 20px.
+     La couleur du texte est définie en blanc (#ffffff). */
+  .text-column,
+  .image-column {
+    flex: 1; /* Les colonnes occupent également la moitié de la largeur de la div */
+    padding: 20px;
+    color: #ffffff; /* Couleur du texte en blanc */
+  }
+
+  .image-column {
+  box-shadow: 5px 5px 10px 1px #8ae5f3;
+}
+
+
+  .text-column h2{
+    color: #58bbbc;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
+  }
+  
+  /* Les styles pour la colonne de texte.
+     La propriété "order" détermine l'ordre d'affichage, ici le texte est affiché en premier. */
+  .text-column {
+    order: 1;
+    text-align: center; /* Alignement du texte à gauche */
+  }
+
+  .text-column {
+    flex: 1;
+    padding: 20px;
+    color: #ffffff;
+    transform: translateX(10%);
+    opacity: 5;
+    transition: transform 1s ease, opacity 1s ease;
+  }
+  
+
+
+  .text-column.animate {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  
+
+  
+  /* Les styles pour la colonne d'image.
+     La propriété "order" détermine l'ordre d'affichage, ici l'image est affichée en deuxième. */
+  .image-column {
+    order: 2;
+    text-align: right; /* Alignement du texte à droite */
+  }
+  
+  /* Styles pour les images à l'intérieur de la colonne d'image.
+     L'image occupe 100% de la largeur et une hauteur fixe de 620 pixels.
+     La bordure est commentée pour l'instant (désactivée). */
+  .image-column img {
+    width: 100%;
+    height: auto;
+    transition: opacity 1s ease; /* Ajoute une transition en douceur */
+  }
+  
+  /* Les styles inversés sont appliqués lorsque la classe "reversed" est ajoutée à la div principale.
+     Ces styles inversent l'ordre d'affichage du texte et de l'image. */
+  .reversed .text-column {
+    order: 2;
+    text-align: center;
+  }
+  
+  .reversed .image-column {
+    order: 1;
+    text-align: left;
+  }
+  
+/* Ajoutez ces styles à la classe .text-column */
+.text-column {
+  flex: 1;
+  padding: 20px;
+  color: #ffffff;
+  animation: slideFromLeft 1s ease-in-out; /* Ajoutez une animation pour l'effet de sortie */
+}
+
+/* Définissez l'animation slideFromLeft */
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%); /* Commencez le texte à l'extérieur de la div à gauche */
+    opacity: 0; /* Définissez l'opacité initiale à 0 */
+  }
+  to {
+    transform: translateX(0%); /* Déplacez le texte vers la position normale */
+    opacity: 1; /* Rendez le texte complètement visible */
+  }
+}
+
+}
+
 
 
 
@@ -742,7 +1097,6 @@ font-family: 'Lobster Two', cursive;
 
 
 /* section partenaire */
-
 .partners-section {
   text-align: center;
   padding: 40px;
@@ -776,6 +1130,48 @@ hr .partner {
   margin: 20px 0;
   border: none;
   border-top: 2px solid #ccc;
+}
+
+/* responsivité */
+@media screen and (max-width: 768px) {
+
+  .partners-section {
+    text-align: center;
+    padding: 40px;
+    margin: 8%;
+  }
+  
+  .section-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #58bbbc;
+    text-decoration: underline;
+  }
+  
+  .partners-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .partner-block {
+    width: 100px;
+    margin: 5px;
+  }
+  
+  .partner-block img {
+    width: 80%;
+    height: auto;
+  }
+  
+  hr .partner {
+    margin: 20px 0;
+    border: none;
+    border-top: 2px solid #2ea6c2;
+  }
+  
+
 }
 
 
@@ -834,6 +1230,36 @@ hr .partner {
   color: white; /* Applique la couleur de texte au lien au survol */
 }
 
+@media screen and (max-width: 768px) {
+
+  .scroll-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #58bbbc;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 14px; /* Ajoutez la taille de police souhaitée */
+  }
+  
+  .scroll-top-button a {
+    text-decoration: none; /* Supprime la décoration par défaut des liens */
+    color: white; /* Applique la couleur de texte au lien */
+  }
+  
+  .scroll-top-button:hover {
+    background-color: #447d7f;
+  }
+  
+  .scroll-top-button:hover a {
+    color: white; /* Applique la couleur de texte au lien au survol */
+  }
+
+}
+
 
 
 
@@ -858,6 +1284,7 @@ hr .partner {
     text-align: center;
     font-size: large;
     border: 2px solid #58bbbc;
+    margin-top: 30px;
   }
   
   .footer-links-center ul {
@@ -904,5 +1331,74 @@ hr .partner {
   .copy a{
     text-decoration: none;
     color: #ffffff;
+  }
+
+  @media screen and (max-width: 768px) {
+
+    /* Style général du footer */
+.footer {
+  background-color: #0e0e0e; /* Couleur de fond du footer */
+  padding: 20px 0; /* Rembourrage intérieur du footer (haut et bas : 20px, gauche et droite : 0) */
+  display: flex; /* Utilisation de Flexbox pour la mise en page */
+  justify-content: space-between; /* Espace entre les éléments du footer */
+  align-items: center; /* Centre verticalement le contenu du footer */
+  color: white; /* Couleur du texte du footer */
+  height: 150px; /* Hauteur fixe du footer */
+  text-align: center; /* Centre le texte horizontalement */
+  font-size: large; /* Taille de la police pour le texte du footer */
+  border: 2px solid #58bbbc; /* Bordure autour du footer avec une couleur spécifiée */
+  margin-top: 30px; /* Marge en haut du footer pour l'espacement */
+}
+
+/* Styles pour la liste de liens au centre du footer */
+.footer-links-center ul {
+  list-style: none; /* Supprime les puces de liste */
+  margin: 0; /* Supprime la marge autour de la liste */
+  padding: 0; /* Supprime le rembourrage intérieur de la liste */
+}
+
+.footer-links-center li {
+  margin: 10px 0; /* Marge en haut et en bas de chaque élément de liste */
+}
+
+.footer-links-center a {
+  color: white; /* Couleur du texte des liens du footer */
+  text-decoration: none; /* Supprime la décoration de lien (soulignement) */
+  margin-left: 100px; /* Ajoute une marge à gauche pour espacer les liens horizontalement */
+}
+
+/* Styles pour les liens au survol (hover) */
+.footer-links-center a:hover {
+  font-size: larger; /* Augmente la taille de la police au survol */
+  color: #58bbbc; /* Change la couleur du texte au survol */
+}
+
+/* Styles pour la section de liens à droite du footer */
+.footer-links-right {
+  display: flex; /* Utilisation de Flexbox pour la mise en page */
+  align-items: center; /* Centre verticalement les éléments de la section de liens à droite */
+}
+
+.footer-links-right a {
+  margin: 0 10px; /* Marge horizontale autour de chaque lien */
+}
+
+.footer-links-right img {
+  width: 30px; /* Largeur des images des liens */
+  height: 30px; /* Hauteur des images des liens */
+}
+
+/* Texte en dessous du footer (mention légale, copyright, etc.) */
+.copy {
+  font-size: smaller; /* Taille de la police plus petite pour le texte de la mention légale */
+  margin-left: 20px; /* Marge à gauche pour espacer le texte de la mention légale horizontalement */
+}
+
+.copy a {
+  text-decoration: none; /* Supprime la décoration de lien pour les liens de la mention légale */
+  color: #ffffff; /* Couleur du texte des liens de la mention légale */
+}
+
+
   }
   
