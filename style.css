@@ -13,27 +13,28 @@ font-family: 'Lobster Two', cursive;
 
 
 
- body {
+/* Styles généraux pour le corps du document */
+body {
   margin: 0;
   background-color: black;
-  font-family: Arial, sans-serif; /* Ajoutez une police de caractères par défaut */
+  font-family: Arial, sans-serif; /* Police de caractères par défaut */
 }
 
-/* la navbar */
+/* Styles pour la barre de navigation (navbar) */
 .navbar {
   width: 100%;
   background-color: rgb(0, 0, 0);
   height: 40px;
-  position: relative; /* Permet à la vidéo d'apparaître au-dessus de la navbar */
+  position: relative; /* Position relative pour que la vidéo apparaisse au-dessus de la navbar */
 }
 
 /* Réduire la taille du logo de la navbar */
 .navbar-logo img {
-  width: 160px; /* Ajustez la largeur souhaitée */
-  height: 60px; /* Garantit le maintien du ratio largeur/hauteur */
+  width: 160px; /* Largeur du logo */
+  height: 60px; /* Hauteur du logo */
 }
 
-
+/* Styles pour la liste de navigation */
 .nav-list {
   list-style: none;
   display: flex;
@@ -50,7 +51,7 @@ font-family: 'Lobster Two', cursive;
   text-decoration: none;
   color: rgb(255, 255, 255);
   text-align: center;
-  font-size: x-large;
+  font-size: x-large; /* Taille de police pour les liens de navigation */
 }
 
 .nav-list button {
@@ -62,143 +63,150 @@ font-family: 'Lobster Two', cursive;
   border-radius: 4px;
 }
 
-/* titre */
+/* Styles pour le titre */
 .titre1 {
   position: relative;
   text-align: center;
-  color: #58bbbc;
-  font-family : 'Rubik Iso';
+  color: #58bbbc; /* Couleur du texte */
+  font-family: 'Rubik Iso'; /* Famille de police personnalisée */
 }
 
-/* parti du header */
+/* Styles pour la section du header */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 8% ; /* Centrer le contenu verticalement */
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
+  margin: 8%; /* Marge extérieure pour centrer le contenu verticalement */
+  background-color: rgba(0, 0, 0, 0.7); /* Couleur de fond semi-transparente */
+  color: white; /* Couleur du texte */
   padding: 20px;
   position: relative;
 }
 
+/* Styles pour le conteneur vidéo */
 .video-container {
-  position: absolute; /* Fait apparaître la vidéo au-dessus de tout */
+  position: absolute; /* Positionnement absolu pour que la vidéo soit au-dessus de tout */
   top: 0;
   left: 0;
   right: 0;
-  height: 100vh; /* Utilise la hauteur de la fenêtre pour la vidéo */
-  z-index: -1;
+  height: 100vh; /* Hauteur de la fenêtre pour la vidéo */
+  z-index: -1; /* Empile la vidéo derrière le contenu */
   overflow: hidden;
 }
 
 .video-container video {
   object-fit: cover;
   width: 100%;
-  height: 900px; /* Assurez-vous que la vidéo couvre tout le conteneur */
+  height: 900px; /* Hauteur de la vidéo */
 }
 
-
-  
-  .video-link {
-    color: white;
-    text-decoration: none;
-    background-color: #58bbbc;
-    padding: 10px 20px;
-    border-radius: 5px;
-  }
-
-  
-  
-  .sub-text {
-    color: white;
-    font-size: xx-large;
-  }
-  
-  .header-content {
-    flex: 1;
-    color: #ffffff;
-    /* margin-left: -100px; */
-    color: #58bbbc;
-  }
-  
-  h1 {
-    font-size: 70px;
-    margin-bottom: 10px;
-    color: #ffffff;
-    font-family: 'Lobster', cursive;
-  }
-  
-  .big-button {
-    display: inline-block;
-    padding: 20px 40px;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    border-radius: 5px;
-  }
-
-  .euro {
-    color: #58bbbc; /* Change la couleur en bleu */
-    float: right; /* Place le texte à droite */
-    margin-right: 0px; /* Ajoute une marge à droite pour l'espacement */
-    font-family : 'Rubik Iso', cursive;
-    font-size: xx-large;
-    margin-bottom: 10px;
+/* Styles pour les liens vidéo */
+.video-link {
+  color: white;
+  text-decoration: none;
+  background-color: #58bbbc;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 
+/* Styles pour le texte secondaire */
+.sub-text {
+  color: white;
+  font-size: xx-large; /* Taille de police pour le texte secondaire */
+}
 
-  p{
-    font-size: xx-large;
-    color: #ffffff;
-  }
-  
-  header hr {
-    width: 200%;
-    border: none;
-    border-bottom: 1px solid #ffffff;
-    margin: 20px 0;
-  }
-  
-  .image-section {
-    flex: 1;
-    position: relative;
-  }
+/* Styles pour le contenu du header */
+.header-content {
+  flex: 1;
+  color: #ffffff; /* Couleur du texte */
+  color: #58bbbc; /* Couleur du texte */
+}
 
-  .chateau{
-    width: 450px;
-    height: auto;
-    margin-left: 40px;
-  }
-  
-  
-  .platform-links {
-    position: absolute;
-    bottom: 300px;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .platform-links a {
-    margin: 20px 20px;
-  }
-  
-  .platform-links img {
-    width: 30px;
-    height: 30px;
-  }
+/* Styles pour le titre h1 */
+h1 {
+  font-size: 70px; /* Taille de police pour le titre principal */
+  margin-bottom: 10px;
+  color: #ffffff; /* Couleur du texte */
+  font-family: 'Lobster', cursive; /* Famille de police personnalisée */
+}
 
-  .header-content, .image-section {
-    opacity: 0; /* Définit l'opacité initiale à 0 */
-    transform: translateX(20px); /* Déplace le contenu vers le bas de 20 pixels */
-    transition: opacity 3s ease, transform 3s ease; /* Ajoute une transition fluide */
+/* Styles pour les gros boutons */
+.big-button {
+  display: inline-block;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0); /* Couleur du texte */
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Styles pour le texte "euro" */
+.euro {
+  color: #58bbbc; /* Couleur du texte en bleu */
+  float: right; /* Déplace le texte à droite */
+  margin-right: 0px; /* Ajoute une marge à droite pour l'espacement */
+  font-family: 'Rubik Iso', cursive; /* Famille de police personnalisée */
+  font-size: xx-large; /* Taille de police pour le texte "euro" */
+  margin-bottom: 10px;
+}
+
+/* Styles pour les paragraphes */
+p {
+  font-size: xx-large; /* Taille de police pour les paragraphes */
+  color: #ffffff; /* Couleur du texte */
+}
+
+/* Styles pour la ligne horizontale */
+header hr {
+  width: 200%;
+  border: none;
+  border-bottom: 1px solid #ffffff; /* Ligne de séparation en dessous du texte */
+  margin: 20px 0;
+}
+
+/* Styles pour la section d'image */
+.image-section {
+  flex: 1;
+  position: relative;
+}
+
+/* Styles pour l'image du château */
+.chateau {
+  width: 450px;
+  height: auto; /* Hauteur automatique pour maintenir le ratio */
+  margin-left: 40px;
+}
+
+/* Styles pour les liens de plateforme */
+.platform-links {
+  position: absolute;
+  bottom: 300px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.platform-links a {
+  margin: 20px 20px;
+}
+
+.platform-links img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Styles pour les éléments avec animation d'apparition */
+.header-content, .image-section {
+  opacity: 0; /* Définit l'opacité initiale à 0 */
+  transform: translateX(20px); /* Déplace le contenu vers le bas de 20 pixels */
+  transition: opacity 3s ease, transform 3s ease; /* Ajoute une transition fluide */
 }
 
 .header-content.active, .image-section.active {
-    opacity: 1; /* Opacité complète pour l'apparition */
-    transform: translateY(0); /* Position initiale */
+  opacity: 1; /* Opacité complète pour l'apparition */
+  transform: translateY(0); /* Position initiale */
 }
+
 
   /* fin du header */
 
@@ -293,12 +301,203 @@ font-family: 'Lobster Two', cursive;
 }
 
 /* responsivité pour portable */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 412px) {
 
+ /* Styles généraux pour le corps du document */
+body {
+  margin: 0;
+  background-color: black;
+  font-family: Arial, sans-serif; /* Police de caractères par défaut */
+}
+
+/* Styles pour la barre de navigation (navbar) */
+.navbar {
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  height: 40px;
+  position: relative; /* Position relative pour que la vidéo apparaisse au-dessus de la navbar */
+}
+
+/* Réduire la taille du logo de la navbar */
+.navbar-logo img {
+  width: 160px; /* Largeur du logo */
+  height: 60px; /* Hauteur du logo */
+}
+
+/* Styles pour la liste de navigation */
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  margin: 6px 10px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 18px; /* Taille de police pour les liens de navigation */
+}
+
+.nav-list button {
+  background-color: black;
+  border: none;
+  padding: 8px 16px;
+  color: #58bbbc;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Styles pour le titre */
+.titre1 {
+  position: relative;
+  text-align: center;
+  color: #58bbbc; /* Couleur du texte */
+  font-family: 'Rubik Iso'; /* Famille de police personnalisée */
+}
+
+/* Styles pour la section du header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8% 2%; /* Marge extérieure pour centrer le contenu verticalement */
+  background-color: rgba(0, 0, 0, 0.7); /* Couleur de fond semi-transparente */
+  color: white; /* Couleur du texte */
+  padding: 20px;
+  position: relative;
+}
+
+/* Styles pour le conteneur vidéo */
+.video-container {
+  position: absolute; /* Positionnement absolu pour que la vidéo soit au-dessus de tout */
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50vh; /* Hauteur de la fenêtre pour la vidéo */
+  z-index: -1; /* Empile la vidéo derrière le contenu */
+  overflow: hidden;
+}
+
+.video-container video {
+  object-fit: cover;
+  width: 100%;
+  max-height: 300px; /* Hauteur maximale de la vidéo */
+}
+
+/* Styles pour les liens vidéo */
+.video-link {
+  color: white;
+  text-decoration: none;
+  background-color: #58bbbc;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Styles pour le texte secondaire */
+.sub-text {
+  color: white;
+  font-size: 24px; /* Taille de police pour le texte secondaire */
+}
+
+/* Styles pour le contenu du header */
+.header-content {
+  flex: 1;
+  color: #ffffff; /* Couleur du texte */
+  color: #58bbbc; /* Couleur du texte */
+}
+
+/* Styles pour le titre h1 */
+h1 {
+  font-size: 36px; /* Taille de police pour le titre principal */
+  margin-bottom: 10px;
+  color: #ffffff; /* Couleur du texte */
+  font-family: 'Lobster', cursive; /* Famille de police personnalisée */
+}
+
+/* Styles pour les gros boutons */
+.big-button {
+  display: inline-block;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0); /* Couleur du texte */
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Styles pour le texte "euro" */
+.euro {
+  color: #58bbbc; /* Couleur du texte en bleu */
+  float: right; /* Déplace le texte à droite */
+  margin-right: 0px; /* Ajoute une marge à droite pour l'espacement */
+  font-family: 'Rubik Iso', cursive; /* Famille de police personnalisée */
+  font-size: 24px; /* Taille de police pour le texte "euro" */
+}
+
+/* Styles pour les paragraphes */
+p {
+  font-size: 24px; /* Taille de police pour les paragraphes */
+  color: #ffffff; /* Couleur du texte */
+}
+
+/* Styles pour la ligne de séparation horizontale */
+header hr {
+  width: 100%; /* Largeur à 100% */
+  border: none;
+  border-bottom: 1px solid #ffffff; /* Ligne de séparation en dessous */
+  margin: 20px 0;
+}
+
+/* Styles pour la section d'image */
+.image-section {
+  flex: 1;
+  position: relative;
+}
+
+/* Styles pour l'image du château */
+.chateau {
+  width: 100%; /* Largeur à 100% */
+  height: auto; /* Hauteur automatique */
+  margin-left: 0; /* Marge gauche réinitialisée */
+}
+
+/* Styles pour les liens des plateformes sociales */
+.platform-links {
+  position: absolute;
+  bottom: 200px; /* Position en bas de la section */
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.platform-links a {
+  margin: 20px 20px; /* Marge autour des liens */
+}
+
+.platform-links img {
+  width: 30px; /* Largeur des images des plateformes sociales */
+  height: 30px; /* Hauteur des images des plateformes sociales */
+}
+
+/* Styles pour les éléments qui apparaissent avec une animation */
+.header-content, .image-section {
+  opacity: 0; /* Opacité initiale à 0 */
+  transform: translateX(20px); /* Déplace le contenu vers la droite de 20 pixels */
+  transition: opacity 3s ease, transform 3s ease; /* Ajoute une transition fluide */
+}
+
+.header-content.active, .image-section.active {
+  opacity: 1; /* Opacité complète pour l'apparition */
+  transform: translateY(0); /* Position initiale */
+}
 
 
 }
-
   
 
 
@@ -469,6 +668,95 @@ font-family: 'Lobster Two', cursive;
 
 
   }
+
+/* responsivité portable */
+  @media screen and (max-width: 412px) {
+
+
+    /* Styles pour la section .game-details */
+
+/* Conteneur principal avec disposition en colonne */
+.game-details {
+  display: flex;
+  flex-direction: column; /* Affiche les éléments en colonne */
+  align-items: center; /* Centre les éléments horizontalement */
+  margin-top: 40px; /* Marge supérieure de 40 pixels */
+  margin: 0 8%; /* Marge gauche et droite de 8% */
+  padding: 10px; /* Ajoute un espace intérieur de 10 pixels */
+}
+
+/* Styles pour la colonne de gauche */
+.left-column {
+  flex: 1; /* La colonne occupe une part égale de l'espace disponible */
+  color: #ffffff; /* Couleur du texte en blanc */
+  text-align: center; /* Centre le texte horizontalement */
+  margin-bottom: 20px; /* Ajoute une marge inférieure de 20 pixels */
+}
+
+/* Styles pour les titres h2 */
+h2 {
+  font-size: 36px; /* Taille de la police */
+  color: #58bbbc; /* Couleur du texte en bleu */
+  text-decoration: underline; /* Souligne le texte */
+  font-family: 'Lobster Two', cursive; /* Police personnalisée */
+}
+
+/* Style pour l'image */
+.tete {
+  margin-top: 15px; /* Marge supérieure pour l'image */
+  width: 100%; /* Largeur de l'image à 100% */
+  max-width: 400px; /* Largeur maximale de l'image */
+  box-shadow: 5px 5px 10px 1px #8ae5f3; /* Ajoute une ombre à l'image */
+}
+
+/* Styles pour la colonne de droite */
+.right-column {
+  flex: 1; /* La colonne occupe une part égale de l'espace disponible */
+  text-align: center; /* Centre le texte horizontalement */
+  margin-top: 20px; /* Marge supérieure de 20 pixels */
+}
+
+/* Titre pour la colonne de droite */
+.about-title {
+  font-size: 36px; /* Taille de la police */
+  color: #58bbbc; /* Couleur du texte en bleu */
+  font-size: xx-large; /* Taille de police personnalisée */
+}
+
+/* Style pour les liens vidéo */
+.video-link {
+  display: block; /* Affiche les liens en tant que blocs */
+  margin-top: 10px; /* Marge supérieure pour les liens */
+  text-decoration: none; /* Supprime la décoration des liens */
+  color: #58bbbc; /* Couleur du texte en bleu */
+}
+
+/* Styles pour le conteneur vidéo */
+.video-embed {
+  position: relative; /* Position relative pour les éléments internes */
+  margin-top: 10px; /* Marge supérieure pour le conteneur vidéo */
+  padding: 10px; /* Ajoute un espace intérieur de 10 pixels */
+  background-color: #ffffff; /* Couleur d'arrière-plan en blanc */
+  border: 1px solid #58bbbc; /* Bordure solide avec une couleur en bleu */
+}
+
+/* Style pour les vidéos à l'intérieur du conteneur */
+.video-embed video {
+  width: 100%; /* Vidéo à 100% de la largeur du conteneur */
+  max-height: 300px; /* Hauteur maximale de la vidéo */
+}
+
+/* Style pour les titres h3 */
+h3 {
+  margin-top: 20px; /* Marge supérieure de 20 pixels */
+  color: #ffffff; /* Couleur du texte en blanc */
+  text-align: center; /* Centre le texte horizontalement */
+  font-size: x-large; /* Taille de police x-large */
+  font-family: 'Lobster', cursive; /* Police personnalisée */
+}
+
+
+  }
   
 
 
@@ -494,71 +782,87 @@ font-family: 'Lobster Two', cursive;
 
 
   /* parti TITRE CONCEPT et premier formulaire */
+/* Styles pour la section .concept */
+
+/* Style pour centrer le contenu dans la section .concept */
 .concept {
-    text-align: center;
-    margin-top: 40px;
-  }
-  
-  .concept-title {
-    font-size: 1.5rem;
-    color:#58bbbc;
-    font-size: 60px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
+  text-align: center; /* Centre le texte horizontalement */
+  margin-top: 40px; /* Ajoute une marge en haut pour espacer le contenu */
+}
 
-  hr{
-    width: 50%;
-  }
-  
-  .newsletter {
-    margin-top: 20px;
-  }
-  
-  .newsletter-title {
-    font-size: 2rem;
-    color: white;
-  }
-  
-  .email-input {
-    display: flex;
-    align-items: center;
-    margin-top: 0;
-    border: 1px solid #0e0e0e;
-    padding: 5px;
-    background-color: black;
-    justify-content: center;
-    width: 40%;
-    margin-left: 450px;
-  }
-  
-  .email-input input[type="text"] {
-    width: 100%;
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 5px;
-  }
-  
-  .email-addon {
-    color: #0e0e0e;
-    padding: 0 5px;
-  }
-  
-  .subscribe-button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .arrow-icon {
-    width: 10px;
-    height: 10px;
-    border-top: 2px solid gray;
-    border-right: 2px solid gray;
-    transform: rotate(45deg);
-    margin: auto;
-  }
+/* Style du titre de la section .concept */
+.concept-title {
+  font-size: 1.5rem; /* Définit la taille de la police */
+  color: #58bbbc; /* Couleur du texte en bleu */
+  font-size: 60px; /* Taille de police personnalisée */
+  font-family: Georgia, 'Times New Roman', Times, serif; /* Police personnalisée */
+}
 
+/* Style pour la ligne horizontale */
+hr {
+  width: 50%; /* Définit la largeur de la ligne à 50% */
+}
+
+/* Style pour le conteneur de la newsletter */
+.newsletter {
+  margin-top: 20px; /* Ajoute une marge en haut pour espacer le contenu */
+}
+
+/* Style du titre de la newsletter */
+.newsletter-title {
+  font-size: 2rem; /* Définit la taille de la police */
+  color: white; /* Couleur du texte en blanc */
+}
+
+/* Style pour le conteneur de l'entrée d'e-mail avec une largeur accrue */
+.email-input {
+  display: flex; /* Utilise la disposition flexible */
+  align-items: center; /* Centre verticalement les éléments enfants */
+  margin-top: 0; /* Réinitialise la marge supérieure */
+  border: 1px solid #0e0e0e; /* Ajoute une bordure de 1 pixel avec une couleur personnalisée */
+  padding: 5px; /* Ajoute un rembourrage interne de 5 pixels */
+  background-color: black; /* Couleur d'arrière-plan noire */
+  justify-content: center; /* Centre horizontalement les éléments enfants */
+  width: 40%; /* Définit la largeur du conteneur à 40% */
+  margin-left: 450px; /* Ajoute une marge à gauche pour l'espacement */
+}
+
+/* Style de la zone de saisie d'e-mail (input[type="text"]) */
+.email-input input[type="text"] {
+  width: 100%; /* Remplit la largeur du conteneur parent */
+  background-color: black; /* Couleur d'arrière-plan noire */
+  color: white; /* Couleur du texte en blanc */
+  border: none; /* Supprime les bordures du champ de saisie */
+  padding: 5px; /* Ajoute un rembourrage interne de 5 pixels */
+}
+
+/* Style de l'élément d'ajout (addon) à l'intérieur de la zone de saisie d'e-mail */
+.email-addon {
+  color: #0e0e0e; /* Couleur du texte en gris foncé */
+  padding: 0 5px; /* Ajoute un espace autour du texte */
+}
+
+/* Style du bouton d'abonnement */
+.subscribe-button {
+  background-color: transparent; /* Couleur d'arrière-plan transparente */
+  border: none; /* Supprime les bordures du bouton */
+  cursor: pointer; /* Change le curseur en main au survol */
+}
+
+/* Style de l'icône de flèche dans le bouton */
+.arrow-icon {
+  width: 10px; /* Définit la largeur de l'icône */
+  height: 10px; /* Définit la hauteur de l'icône */
+  border-top: 2px solid gray; /* Ajoute une ligne en haut */
+  border-right: 2px solid gray; /* Ajoute une ligne à droite */
+  transform: rotate(45deg); /* Fait pivoter l'icône de 45 degrés */
+  margin: auto; /* Centre l'icône horizontalement */
+}
+
+
+
+
+/* parti responsive tablette */
   @media screen and (max-width: 768px) {
 
     .concept {
@@ -628,8 +932,91 @@ font-family: 'Lobster Two', cursive;
 
   }
 
-  @media screen and (max-width: 400px) {
-      
+
+  /* reponsivité portable */
+  @media screen and (max-width: 412px) {
+
+/* Conteneur principal en colonne */
+.concept {
+  text-align: center; /* Centre le texte horizontalement */
+  margin-top: 20px; /* Réduit la marge supérieure pour un espacement plus compact */
+  display: flex; /* Utilise la disposition flexible */
+  flex-direction: column; /* Affiche les éléments en colonne */
+  align-items: center; /* Centre verticalement les éléments enfants */
+}
+
+/* Style du titre de la section .concept */
+.concept-title {
+  font-size: 36px; /* Taille de la police réduite */
+  color: #58bbbc; /* Couleur du texte en bleu */
+  font-family: Georgia, 'Times New Roman', Times, serif; /* Police personnalisée */
+}
+
+/* Style pour la ligne horizontale */
+hr {
+  width: 50%; /* Définit la largeur de la ligne à 50% */
+}
+
+/* Style pour le conteneur de la newsletter */
+.newsletter {
+  margin-top: 15px; /* Réduit la marge supérieure pour un espacement plus compact */
+}
+
+/* Style du titre de la newsletter */
+.newsletter-title {
+  font-size: 1.5rem; /* Taille de la police réduite */
+  color: white; /* Couleur du texte en blanc */
+}
+
+/* Style pour le conteneur de l'entrée d'e-mail en colonne */
+.email-input {
+  display: flex; /* Utilise la disposition flexible */
+  flex-direction: column; /* Affiche les éléments en colonne */
+  align-items: center; /* Centre verticalement les éléments enfants */
+  margin-top: 0; /* Réinitialise la marge supérieure */
+  border: 1px solid #0e0e0e; /* Ajoute une bordure de 1 pixel avec une couleur personnalisée */
+  padding: 5px; /* Ajoute un rembourrage interne de 5 pixels */
+  background-color: black; /* Couleur d'arrière-plan noire */
+  width: 80%; /* Définit la largeur du conteneur à 80% */
+  margin-left: auto; /* Centre le conteneur en ajustant la marge gauche */
+  margin-right: auto; /* Centre le conteneur en ajustant la marge droite */
+}
+
+/* Style de la zone de saisie d'e-mail (input[type="text"]) */
+.email-input input[type="text"] {
+  width: 100%; /* Remplit la largeur du conteneur parent */
+  background-color: black; /* Couleur d'arrière-plan noire */
+  color: white; /* Couleur du texte en blanc */
+  border: none; /* Supprime les bordures du champ de saisie */
+  padding: 5px; /* Ajoute un rembourrage interne de 5 pixels */
+}
+
+/* Style de l'élément d'ajout (addon) à l'intérieur de la zone de saisie d'e-mail */
+.email-addon {
+  color: #0e0e0e; /* Couleur du texte en gris foncé */
+  padding: 0 5px; /* Ajoute un espace autour du texte */
+}
+
+/* Style du bouton d'abonnement */
+.subscribe-button {
+  background-color: transparent; /* Couleur d'arrière-plan transparente */
+  border: none; /* Supprime les bordures du bouton */
+  cursor: pointer; /* Change le curseur en main au survol */
+  margin-top: 10px; /* Ajoute une marge supérieure pour espacer le bouton */
+}
+
+/* Style de l'icône de flèche dans le bouton */
+.arrow-icon {
+  width: 10px; /* Définit la largeur de l'icône */
+  height: 10px; /* Définit la hauteur de l'icône */
+  border-top: 2px solid gray; /* Ajoute une ligne en haut */
+  border-right: 2px solid gray; /* Ajoute une ligne à droite */
+  transform: rotate(45deg); /* Fait pivoter l'icône de 45 degrés */
+  margin: auto; /* Centre l'icône horizontalement */
+}
+
+
+
   }
 
 
@@ -654,75 +1041,98 @@ font-family: 'Lobster Two', cursive;
 
 
 
-/* second formulaire avant le footer */
+
+/* Style général de la section d'abonnement second formulaire avant le footer*/
 .subscribe-section {
-    text-align: center;
-    margin-top: 40%;
-    margin-bottom: 50px;
-  }
-  
-  .subscribe-title {
-    font-size: 1.5rem;
-    color: white;
-  }
-  
-  .email-input-large {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-    border-radius: 20px;
-    background-color: white;
-    padding: 5px;
-    width: 30%;
-    margin-left: 500px;
-  }
-  
-  .email-input-large input[type="text"] {
-    width: 100%;
-    background-color: white;
-    color: black;
-    border: none;
-    padding: 5px;
-  }
-  
-  .email-addon {
-    color: black;
-    padding: 0 5px;
-  }
-  
-  .accept-newsletters {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-    color: white;
-  }
-  
-  .accept-newsletters label {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .accept-newsletters input[type="checkbox"] {
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    border: 1px solid white;
-    background-color: transparent;
-    margin-right: 5px;
-  }
-  
-  .accept-newsletters input[type="checkbox"]:checked {
-    background-color: white;
-  }
+  text-align: center; /* Centre le contenu horizontalement */
+  margin-top: 40%; /* Marge supérieure de 40% de la hauteur de l'écran */
+  margin-bottom: 50px; /* Marge inférieure de 50 pixels */
+}
+
+/* Style du titre de la section d'abonnement */
+.subscribe-title {
+  font-size: 1.5rem; /* Taille de police de 1.5 rem (relative à la taille de base) */
+  color: white; /* Couleur du texte en blanc */
+}
+
+/* Style de la zone de saisie d'e-mail et de son conteneur */
+.email-input-large {
+  display: flex; /* Affiche les éléments en ligne avec un axe horizontal */
+  align-items: center; /* Centre verticalement les éléments enfants */
+  justify-content: center; /* Centre horizontalement les éléments enfants */
+  margin-top: 10px; /* Marge supérieure de 10 pixels */
+  border-radius: 20px; /* Ajoute des bordures arrondies de 20 pixels */
+  background-color: white; /* Couleur d'arrière-plan blanche */
+  padding: 5px; /* Rembourrage intérieur de 5 pixels */
+  width: 30%; /* Largeur de 30% de son conteneur parent */
+  margin-left: 500px; /* Marge à gauche de 500 pixels */
+}
+
+/* Style de la zone de saisie d'e-mail (input[type="text"]) */
+.email-input-large input[type="text"] {
+  width: 100%; /* Largeur de 100% de son conteneur */
+  background-color: white; /* Couleur d'arrière-plan blanche */
+  color: black; /* Couleur du texte en noir */
+  border: 1px solid transparent; /* Supprime les bordures en utilisant une bordure transparente */
+  padding: 5px; /* Rembourrage intérieur de 5 pixels */
+}
+
+/* Style de l'élément texte "addon" à côté de la zone de saisie d'e-mail */
+.email-addon {
+  color: black; /* Couleur du texte en noir */
+  padding: 0 5px; /* Rembourrage de 0 pixels en haut et en bas, 5 pixels à gauche et à droite */
+}
+
+/* Style de la section d'acceptation des newsletters */
+.accept-newsletters {
+  display: flex; /* Affiche les éléments en ligne avec un axe horizontal */
+  align-items: center; /* Centre verticalement les éléments enfants */
+  justify-content: center; /* Centre horizontalement les éléments enfants */
+  margin-top: 10px; /* Marge supérieure de 10 pixels */
+  color: white; /* Couleur du texte en blanc */
+}
+
+/* Style de l'étiquette de la case à cocher d'acceptation */
+.accept-newsletters label {
+  display: flex; /* Affiche les éléments en ligne avec un axe horizontal */
+  align-items: center; /* Centre verticalement les éléments enfants */
+  cursor: pointer; /* Change le curseur en main pour indiquer que c'est cliquable */
+}
+
+/* Style de la case à cocher d'acceptation */
+.accept-newsletters input[type="checkbox"] {
+  appearance: none; /* Supprime le style par défaut du navigateur */
+  width: 15px; /* Largeur de 15 pixels */
+  height: 15px; /* Hauteur de 15 pixels */
+  border: 1px solid white; /* Bordure de 1 pixel solide en blanc */
+  background-color: transparent; /* Couleur d'arrière-plan transparente */
+  margin-right: 5px; /* Marge à droite de 5 pixels */
+}
+
+/* Style de la case à cocher d'acceptation lorsqu'elle est cochée */
+.accept-newsletters input[type="checkbox"]:checked {
+  background-color: white; /* Couleur d'arrière-plan blanche lorsque la case est cochée */
+}
+
 
   .abo{
-    background-color: #58bbbc;
-    color: #ffffff;
-    margin-top: 5px;
+    margin-top: 10px;
+    display: inline-block; /* Affiche le bouton comme un élément en ligne avec des marges autour */
+    padding: 10px 20px; /* Rembourrage intérieur du bouton (haut et bas : 10px, gauche et droite : 20px) */
+    border-radius: 25px; /* Ajoute des bordures arrondies au bouton */
+    background-color: #58bbbc; /* Couleur d'arrière-plan du bouton */
+    color: white; /* Couleur du texte du bouton */
+    text-align: center; /* Centre le texte horizontalement dans le bouton */
+    text-decoration: none; /* Supprime la décoration de lien (soulignement) */
+    font-size: 16px; /* Taille de la police du texte */
+    cursor: pointer; /* Change le curseur en main au survol, indiquant que c'est un élément cliquable */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Ajoute une transition douce pour les changements de couleur */
   }
+
+  .abo:hover {
+    background-color: #ffffff; /* Change la couleur d'arrière-plan au survol */
+    color: #58bbbc; /* Change la couleur du texte au survol */
+}
 
   /* second formulaire avant le footer la responsivité*/
   @media screen and (max-width: 768px) {
@@ -793,15 +1203,122 @@ font-family: 'Lobster Two', cursive;
     }
 
     .abo{
-      background-color: #58bbbc;
-      color: #ffffff;
       margin-top: 5px;
+      display: inline-block; /* Affiche le bouton comme un élément en ligne avec des marges autour */
+      padding: 10px 20px; /* Rembourrage intérieur du bouton (haut et bas : 10px, gauche et droite : 20px) */
+      border-radius: 25px; /* Ajoute des bordures arrondies au bouton */
+      background-color: #58bbbc; /* Couleur d'arrière-plan du bouton */
+      color: white; /* Couleur du texte du bouton */
+      text-align: center; /* Centre le texte horizontalement dans le bouton */
+      text-decoration: none; /* Supprime la décoration de lien (soulignement) */
+      font-size: 16px; /* Taille de la police du texte */
+      cursor: pointer; /* Change le curseur en main au survol, indiquant que c'est un élément cliquable */
+      transition: background-color 0.3s ease, color 0.3s ease; /* Ajoute une transition douce pour les changements de couleur */
     }
+
+    .abo:hover {
+      background-color: #ffffff; /* Change la couleur d'arrière-plan au survol */
+      color: #58bbbc; /* Change la couleur du texte au survol */
+  }
 
   }
 
     /* second formulaire avant le footer la responsivité*/
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 412px) {
+
+      /* Conteneur principal en colonne */
+.subscribe-section {
+  text-align: center; /* Centre le contenu horizontalement */
+  margin-top: 20px; /* Réduit la marge supérieure pour un espacement plus compact */
+  margin-bottom: 20px; /* Réduit la marge inférieure pour un espacement plus compact */
+  display: flex; /* Utilise la disposition flexible */
+  flex-direction: column; /* Affiche les éléments en colonne */
+  align-items: center; /* Centre verticalement les éléments enfants */
+}
+
+/* Style du titre de la section d'abonnement */
+.subscribe-title {
+  font-size: 1.2rem; /* Taille de police réduite pour s'adapter aux petits écrans */
+  color: white; /* Couleur du texte en blanc */
+  font-family: Georgia, 'Times New Roman', Times, serif; /* Police personnalisée */
+}
+
+/* Style de la zone de saisie d'e-mail et de son conteneur */
+.email-input-large {
+  display: flex; /* Utilise la disposition flexible */
+  flex-direction: column; /* Affiche les éléments en colonne */
+  align-items: center; /* Centre verticalement les éléments enfants */
+  margin-top: 10px; /* Réduit la marge supérieure pour un espacement plus compact */
+  border-radius: 20px; /* Ajoute des bordures arrondies de 20 pixels */
+  background-color: white; /* Couleur d'arrière-plan blanche */
+  padding: 5px; /* Rembourrage intérieur de 5 pixels */
+  width: 80%; /* Définit la largeur du conteneur à 80% */
+  margin-left: auto; /* Centre le conteneur en ajustant la marge gauche */
+  margin-right: auto; /* Centre le conteneur en ajustant la marge droite */
+}
+
+/* Style de la zone de saisie d'e-mail (input[type="text"]) */
+.email-input-large input[type="text"] {
+  width: 100%; /* Remplit la largeur du conteneur parent */
+  background-color: white; /* Couleur d'arrière-plan blanche */
+  color: black; /* Couleur du texte en noir */
+  border: 1px solid transparent; /* Supprime les bordures du champ de saisie */
+  padding: 5px; /* Rembourrage intérieur de 5 pixels */
+}
+
+/* Style de l'élément texte "addon" à côté de la zone de saisie d'e-mail */
+.email-addon {
+  color: black; /* Couleur du texte en noir */
+  padding: 0 5px; /* Rembourrage de 0 pixels en haut et en bas, 5 pixels à gauche et à droite */
+}
+
+/* Style de la section d'acceptation des newsletters */
+.accept-newsletters {
+  display: flex; /* Utilise la disposition flexible */
+  flex-direction: column; /* Affiche les éléments en colonne */
+  align-items: center; /* Centre verticalement les éléments enfants */
+  margin-top: 10px; /* Réduit la marge supérieure pour un espacement plus compact */
+  color: white; /* Couleur du texte en blanc */
+}
+
+/* Style de l'étiquette de la case à cocher d'acceptation */
+.accept-newsletters label {
+  display: flex; /* Utilise la disposition flexible */
+  align-items: center; /* Centre verticalement les éléments enfants */
+  cursor: pointer; /* Change le curseur en main pour indiquer que c'est cliquable */
+}
+
+/* Style de la case à cocher d'acceptation */
+.accept-newsletters input[type="checkbox"] {
+  appearance: none; /* Supprime le style par défaut du navigateur */
+  width: 15px; /* Largeur de 15 pixels */
+  height: 15px; /* Hauteur de 15 pixels */
+  border: 1px solid white; /* Bordure de 1 pixel solide en blanc */
+  background-color: transparent; /* Couleur d'arrière-plan transparente */
+  margin-right: 5px; /* Marge à droite de 5 pixels */
+}
+
+/* Style du bouton d'abonnement */
+.abo {
+  margin-top: 10px;
+  display: inline-block; /* Affiche le bouton comme un élément en ligne avec des marges autour */
+  padding: 10px 20px; /* Rembourrage intérieur du bouton (haut et bas : 10px, gauche et droite : 20px) */
+  border-radius: 25px; /* Ajoute des bordures arrondies au bouton */
+  background-color: #58bbbc; /* Couleur d'arrière-plan du bouton */
+  color: white; /* Couleur du texte du bouton */
+  text-align: center; /* Centre le texte horizontalement dans le bouton */
+  text-decoration: none; /* Supprime la décoration de lien (soulignement) */
+  font-size: 14px; /* Taille de la police réduite pour s'adapter aux petits écrans */
+  cursor: pointer; /* Change le curseur en main au survol, indiquant que c'est un élément cliquable */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Ajoute une transition douce pour les changements de couleur */
+}
+
+/* Style du bouton d'abonnement au survol */
+.abo:hover {
+  background-color: #ffffff; /* Change la couleur d'arrière-plan au survol */
+  color: #58bbbc; /* Change la couleur du texte au survol */
+}
+
 
     }
   
@@ -935,7 +1452,7 @@ font-family: 'Lobster Two', cursive;
   }
 }
 
-
+/* parti responsive */
 @media screen and (max-width: 768px) {
 
 /* Ce bloc de styles est appliqué à la div principale qui contient le texte et l'image.
@@ -1041,6 +1558,101 @@ font-family: 'Lobster Two', cursive;
     opacity: 1; /* Rendez le texte complètement visible */
   }
 }
+
+}
+
+
+/* parti responsive pour portable */
+@media screen and (max-width: 412px) {
+
+
+/* Conteneur principal en colonne */
+.text-image-container {
+  flex-direction: column; /* Affiche les éléments en colonne */
+  align-items: center; /* Centre verticalement les éléments enfants */
+  margin-bottom: 20px; /* Réduit la marge inférieure pour un espacement plus compact */
+  margin: 8% 4%; /* Réduit la marge gauche et droite pour un espacement plus compact */
+}
+
+/* Styles pour les colonnes de texte et d'image */
+.text-column,
+.image-column {
+  flex: 1; /* Les colonnes occupent toute la largeur */
+  padding: 20px;
+  color: #ffffff; /* Couleur du texte en blanc */
+  text-align: center; /* Alignement du texte au centre */
+}
+
+/* Styles spécifiques à la colonne d'image */
+.image-column {
+  box-shadow: 5px 5px 10px 1px #8ae5f3;
+}
+
+/* Styles pour les titres h2 dans la colonne de texte */
+.text-column h2 {
+  color: #58bbbc;
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: underline;
+}
+
+/* Styles pour les images dans la colonne d'image */
+.image-column img {
+  width: 100%;
+  height: auto; /* Ajuste automatiquement la hauteur pour maintenir le ratio */
+  opacity: 0; /* Définit l'opacité initiale à 0 */
+  transition: opacity 1s ease; /* Ajoute une transition en douceur */
+}
+
+/* Styles pour les colonnes animées */
+.text-column.animate {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+/* Styles inversés lorsque la classe "reversed" est ajoutée */
+.reversed .text-column {
+  order: 2;
+  text-align: center;
+}
+
+.reversed .image-column {
+  order: 1;
+  text-align: center;
+}
+
+/* Styles pour l'animation de l'entrée de la colonne de texte */
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+/* Ajoutez ces styles à la classe .text-column */
+.text-column {
+  flex: 1;
+  padding: 20px;
+  color: #ffffff;
+  animation: slideFromLeft 1s ease-in-out;
+}
+
+/* Styles pour la deuxième partie */
+.second-part .text-image-container {
+  flex-direction: column-reverse; /* Inverse l'ordre du texte et de l'image */
+  align-items: center; /* Centre verticalement les éléments enfants */
+  margin-bottom: 20px; /* Réduit la marge inférieure pour un espacement plus compact */
+  margin: 2% 4%; /* Réduit la marge gauche et droite pour un espacement plus compact */
+}
+
+.second-part .text-column {
+  text-align: center; /* Centre le texte horizontalement */
+}
+
 
 }
 
@@ -1175,6 +1787,55 @@ hr .partner {
 }
 
 
+  /* reponsivité portable */
+  @media screen and (max-width: 412px) {
+
+    /* Section des partenaires */
+.partners-section {
+  text-align: center;
+  padding: 20px; /* Réduit la marge intérieure */
+}
+
+/* Titre de la section */
+.section-title {
+  font-size: 20px; /* Réduit la taille de la police */
+  margin-bottom: 10px; /* Réduit la marge inférieure */
+  color: #58bbbc; /* Couleur du texte en bleu */
+  text-decoration: underline; /* Souligne le texte */
+}
+
+/* Conteneur des partenaires avec disposition flexible */
+.partners-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px; /* Réduit la marge inférieure */
+}
+
+/* Style pour chaque bloc partenaire */
+.partner-block {
+  width: 100px; /* Réduit la largeur du bloc partenaire */
+  margin: 5px; /* Réduit la marge autour du bloc partenaire */
+}
+
+/* Style pour l'image du partenaire */
+.partner-block img {
+  width: 100%;
+  height: auto;
+}
+
+/* Ligne horizontale entre les partenaires */
+hr .partner {
+  margin: 10px 0; /* Réduit la marge supérieure et inférieure */
+  border: none;
+  border-top: 1px solid #ccc; /* Réduit l'épaisseur de la ligne */
+}
+
+
+  }
+
+
+
 
 
 
@@ -1214,7 +1875,7 @@ hr .partner {
   padding: 10px 15px;
   cursor: pointer;
   z-index: 1;
-  font-size: 14px; /* Ajoutez la taille de police souhaitée */
+  font-size: 14px; 
 }
 
 .scroll-top-button a {
@@ -1242,7 +1903,7 @@ hr .partner {
     padding: 10px 15px;
     cursor: pointer;
     z-index: 1;
-    font-size: 14px; /* Ajoutez la taille de police souhaitée */
+    font-size: 14px; 
   }
   
   .scroll-top-button a {
@@ -1259,6 +1920,41 @@ hr .partner {
   }
 
 }
+
+
+  /* reponsivité portable */
+  @media screen and (max-width: 412px) {
+
+    /* Bouton de retour en haut */
+.scroll-top-button {
+  position: fixed;
+  bottom: 10px; /* Réduit la distance depuis le bas */
+  right: 10px; /* Réduit la distance depuis la droite */
+  background-color: #58bbbc;
+  color: white;
+  border: none;
+  padding: 5px 10px; /* Réduit le rembourrage */
+  cursor: pointer;
+  z-index: 1;
+  font-size: 12px; /* Réduit la taille de police */
+}
+
+.scroll-top-button a {
+  text-decoration: none;
+  color: white;
+}
+
+.scroll-top-button:hover {
+  background-color: #447d7f; /* Changement de couleur au survol */
+}
+
+.scroll-top-button:hover a {
+  color: white;
+}
+
+
+  }
+
 
 
 
@@ -1401,4 +2097,63 @@ hr .partner {
 
 
   }
+
+
+    /* reponsivité portable */
+    @media screen and (max-width: 412px) {
+
+      .footer {
+        width: 100%;
+        background-color: #0e0e0e;
+        padding: 10px 0; /* Réduit le rembourrage vertical */
+        display: flex;
+        flex-direction: column; /* Affiche les éléments en colonne */
+        align-items: center; /* Centre les éléments horizontalement */
+        color: white;
+        text-align: center;
+        font-size: small; /* Réduit la taille de police */
+        border: 2px solid #58bbbc;
+        margin-top: 10px; /* Réduit la marge supérieure */
+        height: auto; /* Ajuste la hauteur automatiquement en fonction du contenu */
+      }
+      
+      .footer-links-center ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .footer-links-center li {
+        margin: 5px 0; /* Réduit la marge autour des éléments de liste */
+      }
+      
+      .footer-links-center a {
+        color: white;
+        text-decoration: none;
+        margin-left: 0; /* Supprime la marge à gauche */
+      }
+      
+      .footer-links-center a:hover {
+        font-size: small; /* Réduit la taille de police au survol */
+        color: #58bbbc;
+      }
+      
+      .footer-links-right {
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Centre les éléments horizontalement */
+      }
+      
+      .footer-links-right a {
+        margin: 10px 5px; /* Réduit la marge autour des liens */
+      }
+      
+      .footer-links-right img {
+        width: 20px; /* Réduit la taille des images */
+        height: 20px;
+      }
+      
+
+    }
+  
   
