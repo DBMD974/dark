@@ -1275,7 +1275,7 @@ hr {
 /* Style de la section d'acceptation des newsletters */
 .accept-newsletters {
   display: flex; /* Utilise la disposition flexible */
-  flex-direction: column; /* Affiche les éléments en colonne */
+  /* flex-direction: column; Affiche les éléments en colonne */
   align-items: center; /* Centre verticalement les éléments enfants */
   margin-top: 10px; /* Réduit la marge supérieure pour un espacement plus compact */
   color: white; /* Couleur du texte en blanc */
@@ -1595,6 +1595,8 @@ hr {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-decoration: underline;
 }
+
+
 
 /* Styles pour les images dans la colonne d'image */
 .image-column img {
@@ -2103,7 +2105,7 @@ hr .partner {
     @media screen and (max-width: 412px) {
 
       .footer {
-        width: 100%;
+        width: 110%;
         background-color: #0e0e0e;
         padding: 10px 0; /* Réduit le rembourrage vertical */
         display: flex;
