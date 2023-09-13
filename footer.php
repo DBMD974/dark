@@ -15,6 +15,7 @@
       <ul>
         <li><a href="mailto:laurent.medea@libertygames.re">Contact</a></li>
         <li><a href="#">RGPD</a></li>
+        <a href=""><p>Conditions et assistances</p></a>
         <li><a href="#">Liberty Games</a></li>
       </ul>
     </div>
@@ -28,7 +29,7 @@
   </footer>
 
   <div class="copy">
-    <a href=""><p>Conditions et assistances</p></a>
+    
   </div>
 <script src="script.js"></script>
 </body>

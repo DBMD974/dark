@@ -215,6 +215,10 @@ header hr {
 
   /* responsivité du header styles pour les écrans de 768px de largeur*/
 @media screen and (max-width: 768px) {
+
+  .navbar{
+    width: 768px;
+  }
   /* Réduisez la taille du logo de la navbar */
   .navbar-logo img {
     width: 768px; /* Ajustez la largeur souhaitée pour les petits écrans */
@@ -227,7 +231,7 @@ header hr {
   }
 
   .navbar-logo img {
-    width: 80px; /* Ajustez la largeur souhaitée */
+    width: 100%; /* Ajustez la largeur souhaitée */
     height: 50px; /* Garantit le maintien du ratio largeur/hauteur */
   }
 
@@ -495,7 +499,6 @@ header hr {
   opacity: 1; /* Opacité complète pour l'apparition */
   transform: translateY(0); /* Position initiale */
 }
-
 
 }
   
@@ -1565,8 +1568,7 @@ hr {
 /* parti responsive pour portable */
 @media screen and (max-width: 412px) {
 
-
-/* Conteneur principal en colonne */
+/* Styles pour la première partie */
 .text-image-container {
   flex-direction: column; /* Affiche les éléments en colonne */
   align-items: center; /* Centre verticalement les éléments enfants */
@@ -1574,7 +1576,6 @@ hr {
   margin: 8% 4%; /* Réduit la marge gauche et droite pour un espacement plus compact */
 }
 
-/* Styles pour les colonnes de texte et d'image */
 .text-column,
 .image-column {
   flex: 1; /* Les colonnes occupent toute la largeur */
@@ -1583,12 +1584,10 @@ hr {
   text-align: center; /* Alignement du texte au centre */
 }
 
-/* Styles spécifiques à la colonne d'image */
 .image-column {
   box-shadow: 5px 5px 10px 1px #8ae5f3;
 }
 
-/* Styles pour les titres h2 dans la colonne de texte */
 .text-column h2 {
   color: #58bbbc;
   font-size: large;
@@ -1596,34 +1595,18 @@ hr {
   text-decoration: underline;
 }
 
-
-
-/* Styles pour les images dans la colonne d'image */
 .image-column img {
   width: 100%;
-  height: auto; /* Ajuste automatiquement la hauteur pour maintenir le ratio */
-  opacity: 0; /* Définit l'opacité initiale à 0 */
-  transition: opacity 1s ease; /* Ajoute une transition en douceur */
+  height: auto;
+  opacity: 0;
+  transition: opacity 1s ease;
 }
 
-/* Styles pour les colonnes animées */
 .text-column.animate {
   transform: translateX(0%);
   opacity: 1;
 }
 
-/* Styles inversés lorsque la classe "reversed" est ajoutée */
-.reversed .text-column {
-  order: 2;
-  text-align: center;
-}
-
-.reversed .image-column {
-  order: 1;
-  text-align: center;
-}
-
-/* Styles pour l'animation de l'entrée de la colonne de texte */
 @keyframes slideFromLeft {
   from {
     transform: translateX(-100%);
@@ -1635,7 +1618,6 @@ hr {
   }
 }
 
-/* Ajoutez ces styles à la classe .text-column */
 .text-column {
   flex: 1;
   padding: 20px;
@@ -1645,7 +1627,7 @@ hr {
 
 /* Styles pour la deuxième partie */
 .second-part .text-image-container {
-  flex-direction: column-reverse; /* Inverse l'ordre du texte et de l'image */
+  flex-direction: column; /* Affiche les éléments en colonne */
   align-items: center; /* Centre verticalement les éléments enfants */
   margin-bottom: 20px; /* Réduit la marge inférieure pour un espacement plus compact */
   margin: 2% 4%; /* Réduit la marge gauche et droite pour un espacement plus compact */
@@ -1654,6 +1636,7 @@ hr {
 .second-part .text-column {
   text-align: center; /* Centre le texte horizontalement */
 }
+
 
 
 }
