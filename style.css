@@ -211,6 +211,10 @@ header hr {
   /* fin du header */
 
 
+/* pour masquer le titre que je veux faire afficher uniquement sur mobile */
+  .mobile-only {
+    display: none; /* Masque le conteneur par défaut */
+  }
 
 
   /* responsivité du header styles pour les écrans de 768px de largeur*/
@@ -363,6 +367,7 @@ body {
   text-align: center;
   color: #58bbbc; /* Couleur du texte */
   font-family: 'Rubik Iso'; /* Famille de police personnalisée */
+  display: none;
 }
 
 /* Styles pour la section du header */
@@ -422,6 +427,7 @@ h1 {
   margin-bottom: 10px;
   color: #ffffff; /* Couleur du texte */
   font-family: 'Lobster', cursive; /* Famille de police personnalisée */
+  display: none;
 }
 
 /* Styles pour les gros boutons */
@@ -432,6 +438,7 @@ h1 {
   color: rgb(0, 0, 0); /* Couleur du texte */
   text-decoration: none;
   border-radius: 5px;
+  display: none;
 }
 
 /* Styles pour le texte "euro" */
@@ -441,6 +448,7 @@ h1 {
   margin-right: 0px; /* Ajoute une marge à droite pour l'espacement */
   font-family: 'Rubik Iso', cursive; /* Famille de police personnalisée */
   font-size: 24px; /* Taille de police pour le texte "euro" */
+  display: none;
 }
 
 /* Styles pour les paragraphes */
@@ -974,7 +982,6 @@ hr {
 /* Style pour le conteneur de l'entrée d'e-mail en colonne */
 .email-input {
   display: flex; /* Utilise la disposition flexible */
-  flex-direction: column; /* Affiche les éléments en colonne */
   align-items: center; /* Centre verticalement les éléments enfants */
   margin-top: 0; /* Réinitialise la marge supérieure */
   border: 1px solid #0e0e0e; /* Ajoute une bordure de 1 pixel avec une couleur personnalisée */
@@ -1249,7 +1256,6 @@ hr {
 /* Style de la zone de saisie d'e-mail et de son conteneur */
 .email-input-large {
   display: flex; /* Utilise la disposition flexible */
-  flex-direction: column; /* Affiche les éléments en colonne */
   align-items: center; /* Centre verticalement les éléments enfants */
   margin-top: 10px; /* Réduit la marge supérieure pour un espacement plus compact */
   border-radius: 20px; /* Ajoute des bordures arrondies de 20 pixels */

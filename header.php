@@ -31,6 +31,15 @@
         </ul>
     </nav>
 
+    <div class="mobile-only">
+  <!-- Ce contenu est visible uniquement sur mobile (à 412px ou moins) -->
+<h1 class="titre-mobile">Bientot sur</h1>
+</div>
+
+
+
+
+
     <div class="titre1">
         <h1>Les Yeux Du Chat</h1>
     </div>
