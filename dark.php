@@ -105,6 +105,43 @@
 
 
 
+  <!-- Section 1 -->
+<div class="text-container-visible-at-412px">
+  <div class="text-column-mobile-one">
+    <h2>THE EYES CAT 1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Porro cumque incidunt laudantium voluptates, 
+      corrupti saepe, eaque corporis, 
+      temporibus commodi accusantium officia rem! Suscipit 
+      voluptatibus et temporibus a, veniam quam ullam,
+       aperiam blanditiis nam quibusdam nesciunt ut! Error
+        officia nulla iusto.</p>
+  </div>
+  <div class="image-column">
+    <img src="images\ima1.jpg" alt="Image 1">
+  </div>
+</div>
+
+<!-- Section 2 -->
+<div class="text-container visible-at-412px">
+  <div class="text-column-mobile-two">
+    <h2>CAT EYES 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Porro cumque incidunt laudantium voluptates, 
+      corrupti saepe, eaque corporis, 
+      temporibus commodi accusantium officia rem! Suscipit 
+      voluptatibus et temporibus a, veniam quam ullam,
+       aperiam blanditiis nam quibusdam nesciunt ut! Error
+        officia nulla iusto.</p>
+  </div>
+  <div class="image-column">
+    <img src="images\ima2.jpg" alt="Image 2">
+  </div>
+</div>
+
+
+
+
 
 
   <!-- new section -->
