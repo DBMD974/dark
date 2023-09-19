@@ -46,26 +46,26 @@
   <!-- le centre su body -->
 
   <div class="concept">
-  <div class="newsletter">
-    <h3 class="newsletter-title">S'abonner à la Newsletter</h3>
-    <form id="newsletter-form" method="post" action="transfert.php">
-      <div class="email-input">
-        <input type="email" id="email" name="email" placeholder="@">
-        <div class="email-addon">@</div>
-        <button class="subscribe-button" type="submit">
-          <div class="arrow-icon"></div>
-        </button>
-      </div>
-      <div class="accept-newsletters">
-        <input type="checkbox" id="accept-checkbox" name="accept">
-        <label for="accept-checkbox">J'accepte de recevoir des newsletters</label>
-        <span class="error-message" id="accept-error">Vous devez accepter de recevoir des newsletters pour vous abonner.</span>
-      </div>
-    </form>
+    <div class="newsletter">
+      <h3 class="newsletter-title">S'abonner à la Newsletter</h3>
+      <form id="newsletter-form" method="post" action="transfert.php">
+        <div class="email-input">
+          <input type="email" id="email" name="email" placeholder="@">
+          <div class="email-addon">@</div>
+          <button class="subscribe-button" type="submit">
+            <div class="arrow-icon"></div>
+          </button>
+        </div>
+        <div class="accept-newsletters">
+          <input type="checkbox" id="accept-checkbox" name="accept">
+          <label for="accept-checkbox">J'accepte de recevoir des newsletters</label>
+          <span class="error-message" id="accept-error">Vous devez accepter de recevoir des newsletters pour vous abonner.</span>
+        </div>
+      </form>
+    </div>
+    <hr class="trait">
+    <h2 class="concept-title">Concept</h2>
   </div>
-  <hr class="trait">
-  <h2 class="concept-title">Concept</h2>
-</div>
 
 
 
@@ -106,38 +106,35 @@
 
 
   <!-- Section 1 -->
-<div class="text-container-visible-at-412px">
-  <div class="text-column-mobile-one">
-    <h2>THE EYES CAT 1</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      Porro cumque incidunt laudantium voluptates, 
-      corrupti saepe, eaque corporis, 
-      temporibus commodi accusantium officia rem! Suscipit 
-      voluptatibus et temporibus a, veniam quam ullam,
-       aperiam blanditiis nam quibusdam nesciunt ut! Error
+  <div class="text-container-visible-at-412px">
+    <div class="text-column-mobile-one">
+      <h2>THE EYES CAT 1</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Porro cumque incidunt laudantium voluptates,
+        corrupti saepe, eaque corporis,
+        temporibus commodi accusantium officia rem! Suscipit
+        voluptatibus et temporibus a, veniam quam ullam,
+        aperiam blanditiis nam quibusdam nesciunt ut! Error
         officia nulla iusto.</p>
-  </div>
-  <div class="image-column">
-    <img src="images\ima1.jpg" alt="Image 1">
-  </div>
-</div>
+    </div>
+    <div class="image-column">
+      <img src="images\ima1.jpg" alt="Image 1">
+    </div>
 
-<!-- Section 2 -->
-<div class="text-container visible-at-412px">
-  <div class="text-column-mobile-two">
-    <h2>CAT EYES 2</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      Porro cumque incidunt laudantium voluptates, 
-      corrupti saepe, eaque corporis, 
-      temporibus commodi accusantium officia rem! Suscipit 
-      voluptatibus et temporibus a, veniam quam ullam,
-       aperiam blanditiis nam quibusdam nesciunt ut! Error
+    <div class="text-column-mobile-two">
+      <h2>CAT EYES 2</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Porro cumque incidunt laudantium voluptates,
+        corrupti saepe, eaque corporis,
+        temporibus commodi accusantium officia rem! Suscipit
+        voluptatibus et temporibus a, veniam quam ullam,
+        aperiam blanditiis nam quibusdam nesciunt ut! Error
         officia nulla iusto.</p>
+    </div>
+    <div class="image-column">
+      <img src="images\ima2.jpg" alt="Image 2">
+    </div>
   </div>
-  <div class="image-column">
-    <img src="images\ima2.jpg" alt="Image 2">
-  </div>
-</div>
 
 
 
@@ -157,7 +154,7 @@
     <hr class="partner">
     <h2 class="section-title">NOS FINANCEURS</h2>
     <div class="partners-row">
-    <div class="partner-block"><img src="../dark/images/partenaire/1.png" alt="Partner 5"></div>
+      <div class="partner-block"><img src="../dark/images/partenaire/1.png" alt="Partner 5"></div>
       <div class="partner-block"><img src="../dark/images/partenaire/canal.png" alt="Partner 6"></div>
       <div class="partner-block"><img src="../dark/images/partenaire/france.png" alt="Partner 7"></div>
       <div class="partner-block"><img src="../dark/images/partenaire/gulli.png" alt="Partner 8"></div>
@@ -203,7 +200,7 @@
 
 
     <!-- Bouton pour retourner en haut de la page -->
-    <button id="scrollTopButton" class="scroll-top-button"><a href="#header">Haut de page</a></button>
+    <button id="scrollTopButton" class="scroll-top-button"><a href="#header"><i class="fa-solid fa-up-long fa-bounce" style="color: #ffffff;"></i></i></a></button>
 
 
 

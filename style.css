@@ -322,14 +322,15 @@ body {
 .navbar {
   width: 100%;
   background-color: rgb(0, 0, 0);
-  height: 40px;
+  height: 45px;
   position: relative; /* Position relative pour que la vidéo apparaisse au-dessus de la navbar */
 }
 
 /* Réduire la taille du logo de la navbar */
 .navbar-logo img {
-  width: 160px; /* Largeur du logo */
-  height: 60px; /* Hauteur du logo */
+  width: 60px; /* Largeur du logo */
+  height: 30px; /* Hauteur du logo */
+  background-color: #000000;
 }
 
 /* Styles pour la liste de navigation */
@@ -343,6 +344,7 @@ body {
 
 .nav-list li {
   margin: 6px 10px;
+  background-color: #0e0e0e;
 }
 
 .nav-list li a {
@@ -376,8 +378,6 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 8% 2%; /* Marge extérieure pour centrer le contenu verticalement */
-  background-color: rgba(0, 0, 0, 0.7); /* Couleur de fond semi-transparente */
-  color: white; /* Couleur du texte */
   padding: 20px;
   position: relative;
 }
@@ -388,14 +388,15 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 50vh; /* Hauteur de la fenêtre pour la vidéo */
+  height: 40vh; /* Hauteur de la fenêtre pour la vidéo */
   z-index: -1; /* Empile la vidéo derrière le contenu */
   overflow: hidden;
+  width: 100%;
 }
 
 .video-container video {
   object-fit: cover;
-  width: 100%;
+  width: 120%;
   max-height: 300px; /* Hauteur maximale de la vidéo */
 }
 
@@ -463,6 +464,7 @@ header hr {
   border: none;
   border-bottom: 1px solid #ffffff; /* Ligne de séparation en dessous */
   margin: 20px 0;
+  display: none;
 }
 
 /* Styles pour la section d'image */
@@ -476,16 +478,17 @@ header hr {
   width: 100%; /* Largeur à 100% */
   height: auto; /* Hauteur automatique */
   margin-left: 0; /* Marge gauche réinitialisée */
-  margin-top: 70px;
+  margin-top: -90px;
 }
 
 /* Styles pour les liens des plateformes sociales */
 .platform-links {
   position: absolute;
-  bottom: 520px; /* Position en bas de la section */
+  bottom: 540px; /* Position en bas de la section */
   right: -10px;
   display: flex;
   /* flex-direction: column; */
+  padding: 0 6px;
 }
 
 .platform-links a {
@@ -507,6 +510,8 @@ header hr {
 .header-content.active, .image-section.active {
   opacity: 1; /* Opacité complète pour l'apparition */
   transform: translateY(0); /* Position initiale */
+  text-align: center;
+  margin-top: 150px;
 }
 
 }
@@ -1278,7 +1283,9 @@ hr {
 /* Style de l'élément texte "addon" à côté de la zone de saisie d'e-mail */
 .email-addon {
   color: rgb(255, 255, 255); /* Couleur du texte en noir */
-  padding: 0 5px; /* Rembourrage de 0 pixels en haut et en bas, 5 pixels à gauche et à droite */
+  padding: 0 5px; /* Rembourrage de 0 pixels en haut et en bas, 5 pixels
+   à gauche et à droite */
+   display: none;
 }
 
 /* Style de la section d'acceptation des newsletters */
@@ -1452,6 +1459,10 @@ hr {
   display: none;
 }
 
+.text-container-visible-at-412px{
+  display: none;
+}
+
 
 
 
@@ -1478,6 +1489,11 @@ hr {
 
 /* parti responsive */
 @media screen and (max-width: 768px) {
+
+  .text-container-visible-at-412px{
+  display: none;
+}
+
 
 /* Ce bloc de styles est appliqué à la div principale qui contient le texte et l'image.
    Il aligne les éléments en ligne, les centre verticalement et ajoute une marge en bas. */
@@ -1594,7 +1610,7 @@ hr {
 /* parti responsive pour portable */
 @media screen and (max-width: 412px) {
 
-/* Style pour le conteneur de texte */
+Style pour le conteneur de texte
 .text-container-visible-at-412px {
   text-align: center; /* Centrer le texte horizontalement */
   margin-bottom: 20px; /* Espace en bas de chaque section */
@@ -1640,9 +1656,9 @@ hr {
 
 
 }
-.text-container-visible-at-412px{
+/* .text-container-visible-at-412px{
   display: none;
-}
+} */
 
 
 
@@ -1915,31 +1931,45 @@ hr .partner {
   @media screen and (max-width: 412px) {
 
     /* Bouton de retour en haut */
-.scroll-top-button {
-  position: fixed;
-  bottom: 10px; /* Réduit la distance depuis le bas */
-  right: 10px; /* Réduit la distance depuis la droite */
-  background-color: #58bbbc;
-  color: white;
-  border: none;
-  padding: 5px 10px; /* Réduit le rembourrage */
-  cursor: pointer;
-  z-index: 1;
-  font-size: 12px; /* Réduit la taille de police */
-}
-
-.scroll-top-button a {
-  text-decoration: none;
-  color: white;
-}
-
-.scroll-top-button:hover {
-  background-color: #447d7f; /* Changement de couleur au survol */
-}
-
-.scroll-top-button:hover a {
-  color: white;
-}
+    .scroll-top-button {
+      position: fixed;
+      bottom: 10px;
+      right: 15px;
+      background-color: #58bbbc;
+      color: white;
+      border: none;
+      width: 40px; /* Largeur du bouton rond */
+      height: 40px; /* Hauteur du bouton rond */
+      border-radius: 50%; /* Forme ronde */
+      text-align: center; /* Centrer le contenu */
+      line-height: 40px; /* Centrer le contenu verticalement */
+      cursor: pointer;
+      z-index: 1;
+      font-size: 12px;
+      overflow: hidden; /* Masquer le débordement du contenu */
+    }
+    
+    .fa-arrow-up:before{
+      font-size: x-large;
+      justify-content: center;
+    }
+    
+    .scroll-top-button::before {
+      transform: translateX(-50%) translateY(-50%) rotate(45deg); /* Rotation pour créer la flèche */
+    }
+    
+    .scroll-top-button::after {
+      transform: translateX(-50%) translateY(-50%) rotate(-45deg); /* Rotation pour créer la flèche */
+    }
+    
+    .scroll-top-button:hover {
+      background-color: #447d7f;
+    }
+    
+    .scroll-top-button:hover a {
+      color: white;
+    }
+    
 
 
   }
