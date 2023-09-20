@@ -245,7 +245,7 @@ header hr {
     position: relative;
     text-align: center;
     color: #58bbbc;
-    font-family : 'Rubik Iso';
+    font-family: 'Lobster' cursive;
   }
 
   .chateau{
@@ -370,6 +370,17 @@ body {
   color: #58bbbc; /* Couleur du texte */
   font-family: 'Rubik Iso'; /* Famille de police personnalisée */
   display: none;
+}
+
+
+/* titre version mobile */
+.mob {
+  display: block; /* Rendre les éléments visibles */
+}
+
+.mobi{
+  text-align: center;
+  color: #ffffff;
 }
 
 /* Styles pour la section du header */
@@ -1465,6 +1476,44 @@ hr {
 
 
 
+/* parti mobile */
+.text-container1 {
+  /* max-width: 412px; Largeur maximale de 412 pixels */
+  margin: 0 auto; /* Centrer le conteneur horizontalement */
+  text-align: center; /* Centrer le texte horizontalement */
+  margin-bottom: 20px; /* Espace en bas de chaque section */
+  display: none;
+}
+
+.image-container {
+  max-width: 100%; /* Largeur maximale de 412 pixels */
+  margin: 0 auto; /* Centrer le conteneur horizontalement */
+  margin-top: 20px; /* Espace en haut de la section image */
+  display: none;
+}
+
+/* Styles pour le texte */
+.text-column-mobile-one {
+  text-align: center;
+  display: none;
+}
+
+.text-contener1-mobile-two{
+  text-align: center;
+  padding: 20px;
+  display: none;
+}
+
+.eagle{
+  width: 300px;
+  height: auto;
+  margin: 0 70px;
+  display: none;
+}
+
+
+
+
 
 
 
@@ -1587,6 +1636,17 @@ hr {
   animation: slideFromLeft 1s ease-in-out; /* Ajoutez une animation pour l'effet de sortie */
 }
 
+/* parti mobile */
+.text-container1,
+.image-container,
+.text-column-mobile-one,
+.text-contener1-mobile-two,
+.eagle,
+.mob {
+  display: none; /* Masquer les éléments par défaut */
+}
+
+
 
 
 }
@@ -1610,27 +1670,50 @@ hr {
 /* parti responsive pour portable */
 @media screen and (max-width: 412px) {
 
-Style pour le conteneur de texte
-.text-container-visible-at-412px {
+    /* Styles spécifiques pour les résolutions de 412px ou moins */
+    .text-container1,
+    .image-container,
+    .text-column-mobile-one,
+    .text-contener1-mobile-two,
+    .eagle{
+      display: block; /* Rendre les éléments visibles */
+    }
+
+/* Styles pour les conteneurs de texte et d'image */
+.text-container1 {
+  /* max-width: 412px; Largeur maximale de 412 pixels */
+  margin: 0 auto; /* Centrer le conteneur horizontalement */
   text-align: center; /* Centrer le texte horizontalement */
   margin-bottom: 20px; /* Espace en bas de chaque section */
 }
 
-/* Style pour la colonne de texte */
+.image-container {
+  max-width: 100%; /* Largeur maximale de 412 pixels */
+  margin: 0 auto; /* Centrer le conteneur horizontalement */
+  margin-top: 20px; /* Espace en haut de la section image */
+}
+
+/* Styles pour le texte */
 .text-column-mobile-one {
+  text-align: center;
+}
+
+.text-contener1-mobile-two{
+  text-align: center;
   padding: 20px;
 }
 
-.text-column-mobile-two{
-  padding: 0;
+.eagle{
+  width: 300px;
+  height: auto;
+  margin: 0 70px;
 }
 
-/* Style pour l'image */
+
+/* Styles pour l'image */
 .image-column img {
   max-width: 100%;
   height: auto;
-  display: block; /* Pour que l'image occupe toute la largeur disponible */
-  margin: 0 auto; /* Centrer l'image horizontalement */
 }
 
 
@@ -1942,7 +2025,7 @@ hr .partner {
       height: 40px; /* Hauteur du bouton rond */
       border-radius: 50%; /* Forme ronde */
       text-align: center; /* Centrer le contenu */
-      line-height: 40px; /* Centrer le contenu verticalement */
+      /* line-height: 40px; Centrer le contenu verticalement */
       cursor: pointer;
       z-index: 1;
       font-size: 12px;
@@ -1968,6 +2051,11 @@ hr .partner {
     
     .scroll-top-button:hover a {
       color: white;
+    }
+
+    .fa-up-long:before{
+      font-size: large;
+
     }
     
 
