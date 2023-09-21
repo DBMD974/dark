@@ -44,9 +44,9 @@
 
 
     <!-- version mobile -->
-    <div class="mob">
+    <!-- <div class="mob">
         <h1 class="mobi">Bientot sur</h1>
-    </div>
+    </div> -->
 
     <div class="video-container">
         <video src="images\uk_yeux_M.mp4" autoplay loop muted></video>
