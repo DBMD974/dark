@@ -1696,11 +1696,7 @@ hr {
 /* Styles pour le texte */
 .text-column-mobile-one {
   text-align: center;
-}
-
-.text-contener1-mobile-two{
-  text-align: center;
-  padding: 20px;
+  margin: 0 8px;
 }
 
 .eagle{
