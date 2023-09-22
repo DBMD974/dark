@@ -49,14 +49,14 @@
     </div> -->
 
     <div class="video-container">
-        <video src="images\uk_yeux_M.mp4" autoplay loop muted></video>
+        <video src="images/chat.mp4" autoplay loop muted></video>
     </div>
 
     <header class="header">
         <div class="header-content">
             <h1>Campagne de Crowdfunding</h1>
             <a class="big-button" href="#">Participer <i class="fa-solid fa-arrow-right fa-2xl" style="color: #000000;"></i></a>
-            <p class="euro">Déjà 10000 € récoltés !</p>
+            <!-- <p class="euro">Déjà 10000 € récoltés !</p> -->
             <hr>
             <p>Adaptation de la BD de Moebius et Jodorowsky en jeu vidéo</p>
             <p>créé par Manuel Ruiz Dupont</p>

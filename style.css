@@ -77,7 +77,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 8%; /* Marge extérieure pour centrer le contenu verticalement */
-  background-color: rgba(0, 0, 0, 0.7); /* Couleur de fond semi-transparente */
+/* background-color: rgba(0, 0, 0, 0.7); Couleur de fond semi-transparente */
   color: white; /* Couleur du texte */
   padding: 20px;
   position: relative;
@@ -467,6 +467,7 @@ h1 {
 p {
   font-size: 24px; /* Taille de police pour les paragraphes */
   color: #ffffff; /* Couleur du texte */
+  margin: 15px 20px;
 }
 
 /* Styles pour la ligne de séparation horizontale */
@@ -561,6 +562,7 @@ header hr {
     flex: 1;
     color: #ffffff;
     text-align: center;
+    margin: inherit;
   }
 
   h2{
@@ -1071,13 +1073,18 @@ hr {
 /* Style général de la section d'abonnement second formulaire avant le footer*/
 .subscribe-section {
   text-align: center; /* Centre le contenu horizontalement */
-  margin-top: 40%; /* Marge supérieure de 40% de la hauteur de l'écran */
+  margin-top: 20%; /* Marge supérieure de 40% de la hauteur de l'écran */
   margin-bottom: 50px; /* Marge inférieure de 50 pixels */
+  background-color: rgba(0, 0, 0, 0); /* Fond semi-transparent pour la section d'abonnement */
+  padding: 20px;
+  text-align: center;
+  position: relative; /* Position relative pour les éléments enfants */
+  z-index: 1; /* Assure que la section d'abonnement est au premier plan */
 }
 
 /* Style du titre de la section d'abonnement */
 .subscribe-title {
-  font-size: 1.5rem; /* Taille de police de 1.5 rem (relative à la taille de base) */
+  font-size: 1.8rem; /* Taille de police de 1.5 rem (relative à la taille de base) */
   color: white; /* Couleur du texte en blanc */
 }
 
@@ -1088,7 +1095,7 @@ hr {
   justify-content: center; /* Centre horizontalement les éléments enfants */
   margin-top: 10px; /* Marge supérieure de 10 pixels */
   border-radius: 20px; /* Ajoute des bordures arrondies de 20 pixels */
-  background-color: white; /* Couleur d'arrière-plan blanche */
+  background-color: rgb(255, 255, 255); /* Couleur d'arrière-plan blanche */
   padding: 5px; /* Rembourrage intérieur de 5 pixels */
   width: 30%; /* Largeur de 30% de son conteneur parent */
   margin-left: 500px; /* Marge à gauche de 500 pixels */
@@ -1097,7 +1104,7 @@ hr {
 /* Style de la zone de saisie d'e-mail (input[type="text"]) */
 .email-input-large input[type="text"] {
   width: 100%; /* Largeur de 100% de son conteneur */
-  background-color: white; /* Couleur d'arrière-plan blanche */
+  background-color: rgb(0, 0, 0); /* Couleur d'arrière-plan blanche */
   color: black; /* Couleur du texte en noir */
   border: 1px solid transparent; /* Supprime les bordures en utilisant une bordure transparente */
   padding: 5px; /* Rembourrage intérieur de 5 pixels */
@@ -1105,8 +1112,9 @@ hr {
 
 /* Style de l'élément texte "addon" à côté de la zone de saisie d'e-mail */
 .email-addon {
-  color: black; /* Couleur du texte en noir */
+  color: rgb(0, 0, 0); /* Couleur du texte en noir */
   padding: 0 5px; /* Rembourrage de 0 pixels en haut et en bas, 5 pixels à gauche et à droite */
+  /* display: none; */
 }
 
 /* Style de la section d'acceptation des newsletters */
@@ -1160,6 +1168,25 @@ hr {
     color: #58bbbc; /* Change la couleur du texte au survol */
 }
 
+
+/* css de video a ajouter au niveau du formulaire */
+/* Styles pour la vidéo en arrière-plan */
+.video-2 {
+  position: absolute; 
+  bottom: -673%;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 300px); /* Hauteur de la fenêtre moins la hauteur du formulaire */
+  object-fit: cover; /* Ajuster la vidéo pour couvrir tout l'espace */
+  z-index: -1; /* Assure que la vidéo est en arrière-plan */
+}
+
+.video-2 video {
+  object-fit: cover;
+  width: 100%;
+  max-height: 390px; /* Hauteur maximale de la vidéo */
+}
+
   /* second formulaire avant le footer la responsivité*/
   @media screen and (max-width: 768px) {
 
@@ -1167,6 +1194,11 @@ hr {
       text-align: center;
       margin-top: 40%;
       margin-bottom: 50px;
+      background-color: rgba(0, 0, 0, 0); /* Fond semi-transparent pour la section d'abonnement */
+  padding: 20px;
+  text-align: center;
+  position: relative; /* Position relative pour les éléments enfants */
+  z-index: 1; /* Assure que la section d'abonnement est au premier plan */
     }
     
     .subscribe-title {
@@ -1247,6 +1279,25 @@ hr {
       color: #58bbbc; /* Change la couleur du texte au survol */
   }
 
+
+  /* css de video a ajouter au niveau du formulaire */
+/* Styles pour la vidéo en arrière-plan */
+.video-2 {
+  position: absolute; 
+  bottom: -510%;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 300px); /* Hauteur de la fenêtre moins la hauteur du formulaire */
+  object-fit: cover; /* Ajuster la vidéo pour couvrir tout l'espace */
+  z-index: -1; /* Assure que la vidéo est en arrière-plan */
+}
+
+.video-2 video {
+  object-fit: cover;
+  width: 100%;
+  max-height: 390px; /* Hauteur maximale de la vidéo */
+}
+
   }
 
     /* second formulaire avant le footer la responsivité*/
@@ -1260,6 +1311,11 @@ hr {
   display: flex; /* Utilise la disposition flexible */
   flex-direction: column; /* Affiche les éléments en colonne */
   align-items: center; /* Centre verticalement les éléments enfants */
+  background-color: rgba(0, 0, 0, 0); /* Fond semi-transparent pour la section d'abonnement */
+  padding: 20px;
+  text-align: center;
+  position: relative; /* Position relative pour les éléments enfants */
+  z-index: 1; /* Assure que la section d'abonnement est au premier plan */
 }
 
 /* Style du titre de la section d'abonnement */
@@ -1275,7 +1331,7 @@ hr {
   align-items: center; /* Centre verticalement les éléments enfants */
   margin-top: 10px; /* Réduit la marge supérieure pour un espacement plus compact */
   border-radius: 20px; /* Ajoute des bordures arrondies de 20 pixels */
-  background-color: rgb(0, 0, 0); /* Couleur d'arrière-plan blanche */
+  background-color: rgba(0, 0, 0, 0); /* Couleur d'arrière-plan blanche */
   padding: 5px; /* Rembourrage intérieur de 5 pixels */
   width: 80%; /* Définit la largeur du conteneur à 80% */
   margin-left: auto; /* Centre le conteneur en ajustant la marge gauche */
@@ -1347,9 +1403,31 @@ hr {
 }
 
 
+/* css de video a ajouter au niveau du formulaire */
+/* Styles pour la vidéo en arrière-plan */
+.video-2 {
+  position: absolute; 
+  bottom: -712%;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 300px); /* Hauteur de la fenêtre moins la hauteur du formulaire */
+  object-fit: cover; /* Ajuster la vidéo pour couvrir tout l'espace */
+  z-index: -1; /* Assure que la vidéo est en arrière-plan */
+}
+
+.video-2 video {
+  object-fit: cover;
+  width: 100%;
+  height: 500px; /* Hauteur maximale de la vidéo */
+}
+
+
     }
   
   
+
+
+
 
 
 
@@ -1702,7 +1780,7 @@ hr {
 .eagle{
   width: 300px;
   height: auto;
-  margin: 0 70px;
+  margin: 0 60px;
 }
 
 
@@ -2205,7 +2283,7 @@ hr .partner {
     @media screen and (max-width: 412px) {
 
       .footer {
-        width: 110%;
+        width: 100%;
         background-color: #0e0e0e;
         padding: 10px 0; /* Réduit le rembourrage vertical */
         display: flex;

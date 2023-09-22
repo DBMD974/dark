@@ -211,6 +211,11 @@
     </form>
     </div>
 
+    <!-- video a ajouter -->
+    <div class="video-2">
+        <video src="images/tete.mp4" autoplay loop muted></video>
+    </div>
+
 
 
 
